@@ -14,8 +14,8 @@ class Dividable
         Console.Write("Enter an integer number: ");
         int inputNumber = int.Parse(Console.ReadLine());
 
-        //bool true if          this is true    and   this is true too 
-        bool dividable = (inputNumber % 5 == 0) && (inputNumber % 7 == 0) && (inputNumber != 0);
+        //bool true if          this is true    and  this is true too 
+        bool dividable = (inputNumber % 35 == 0) && (inputNumber != 0);
 
         Console.WriteLine("n = {0}, Divided by 7 and 5? {1} ", inputNumber, dividable);
     }
