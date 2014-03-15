@@ -12,6 +12,18 @@ class LuckySeven
 {
     static void Main()
     {
+        int inputNumber = int.Parse(Console.ReadLine());
+
+        // Now calculate...
+        int thirdDigit = (inputNumber / 100) % 10;
+        bool isSeven = (thirdDigit == 7) || (thirdDigit == -7);
+
+        /* For example: 
+         * 562735 / 100 = 5627,35 ¬ 5627
+         * 5627 % 10 = 7 
+         * (true) */
+
+        Console.WriteLine("Third digit is 7? {0} ", isSeven);
 
     }
 }
