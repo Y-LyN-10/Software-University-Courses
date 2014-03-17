@@ -12,15 +12,12 @@ class UnicValue
     static void Main()
     {
         Console.Title = "Problem 5. Unicode Value";
-        Console.OutputEncoding = Encoding.GetEncoding("UTF-16");
+        Console.OutputEncoding = Encoding.GetEncoding("UTF-8");
 
-        char symbol = '\u0048'; // Hex of 72. It's 48.
+        char symbol = '\u0048'; // The hex of 72 is 48.
         Console.WriteLine(symbol);
 
-        //TOASK: How to print runes :)
-       
-        char rune = '\u16BA'; //ᚺ 0 Rune Hagalaz
-        Console.WriteLine(rune);
-        Console.WriteLine("Кирилица работи");
+        //Just a check for cyrillic symbols
+        Console.WriteLine("и кирилица работи");
     }
 }

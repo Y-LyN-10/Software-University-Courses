@@ -15,7 +15,7 @@ class ExchangeVars
         Console.Title = "Problem 10. Exchange Variable Values";
         Console.WriteLine("Variables before exhange: \nint a = {0};\nint b = {1};", a, b);
 
-        a = a + b; // 5 + 10 =15
+        a = a + b; // 5 + 10 = 15
         b = a - b; // 15 - 10 = 5
         a = a - b; // 15 - 5 = 10
 

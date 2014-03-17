@@ -12,14 +12,15 @@ class ASCITable
 {
     static void Main()
     {
-        /* ASCII  character-encoding scheme originally based on the English alphabet that encodes 128 specified 
-         * characters - the numbers 0-9, the letters a-z and A-Z, some basic punctuation symbols, some control 
-         * codes and a blank space - into the 7-bit binary integers. To print all of them, me use "for" loop.*/
+        /* ASCII  character-encoding scheme originally based on the English alphabet that encodes
+         * 128 specified characters - the numbers 0-9, the letters a-z and A-Z, some basic punctuation
+         * symbols, some control codes and a blank space - into the 7-bit binary integers.*/ 
 
-        Console.OutputEncoding = System.Text.Encoding.ASCII;
+        Console.OutputEncoding = System.Text.Encoding.Unicode;
         Console.Title = "Problem 14.* Print the ASCII Table";
 
-        for (int i = 0; i < 127; i++)
+        //In the terms of the task is said that I can skip some characters, so I'll print only the visible ones:
+        for (int i = 32; i < 127; i++)
         {
             Console.Write((char)i + " ");
         }

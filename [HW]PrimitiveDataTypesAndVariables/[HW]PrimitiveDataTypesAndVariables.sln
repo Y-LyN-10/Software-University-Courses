@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.EmployeeData", "11.Emplo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.BankAccount", "12.BankAccountData\12.BankAccount.csproj", "{0D3F82B5-3F83-4C7F-943E-FED3BC2B7D89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.IsoscelesTriangle-Var2", "09.IsoscelesTriangleVariant2\09.IsoscelesTriangle-Var2.csproj", "{4A425398-ADCE-46B3-AA6A-82BECBD169AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{0D3F82B5-3F83-4C7F-943E-FED3BC2B7D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D3F82B5-3F83-4C7F-943E-FED3BC2B7D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D3F82B5-3F83-4C7F-943E-FED3BC2B7D89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A425398-ADCE-46B3-AA6A-82BECBD169AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A425398-ADCE-46B3-AA6A-82BECBD169AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A425398-ADCE-46B3-AA6A-82BECBD169AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A425398-ADCE-46B3-AA6A-82BECBD169AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
