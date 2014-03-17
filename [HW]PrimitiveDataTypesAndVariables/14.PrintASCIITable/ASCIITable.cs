@@ -16,7 +16,7 @@ class ASCITable
          * 128 specified characters - the numbers 0-9, the letters a-z and A-Z, some basic punctuation
          * symbols, some control codes and a blank space - into the 7-bit binary integers.*/ 
 
-        Console.OutputEncoding = System.Text.Encoding.Unicode;
+        Console.OutputEncoding = System.Text.Encoding.ASCII;
         Console.Title = "Problem 14.* Print the ASCII Table";
 
         //In the terms of the task is said that I can skip some characters, so I'll print only the visible ones:
