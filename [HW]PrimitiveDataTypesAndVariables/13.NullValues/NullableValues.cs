@@ -1,4 +1,4 @@
-﻿// Problem 13. Null Values Arithmetic
+﻿// Problem 12. Null Values Arithmetic
 // Create a program that assigns null values to an integer and to a double
 // variable. Try to print these variables at the console. Try to add some
 // number or the null literal to these variables and print the result.
@@ -9,7 +9,7 @@ class NullableValues
 {
     static void Main(string[] args)
     {
-        Console.Title = "Problem 13. Null Values Arithmetic";
+        Console.Title = "Problem 12. Null Values Arithmetic";
 
         int? nullableInt = null;
         double? nullableDouble = null;

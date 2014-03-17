@@ -1,4 +1,4 @@
-﻿// Problem 9. Isosceles Triangle
+﻿// Problem 8. Isosceles Triangle
 // Write a program that prints an isosceles triangle 
 // of 9 copyright symbols ©, something like this:
 //    ©
@@ -20,7 +20,7 @@ class Triangle
     static void Main()
     {
         // VARIANT 1:
-        Console.Title = "Problem 9. Isosceles Triangle";
+        Console.Title = "Problem 8. Isosceles Triangle";
         Console.OutputEncoding = System.Text.Encoding.Unicode;
 
         char copyRight = '\u00A9';

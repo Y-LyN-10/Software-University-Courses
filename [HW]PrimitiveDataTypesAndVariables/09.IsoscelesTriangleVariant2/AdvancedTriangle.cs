@@ -4,6 +4,8 @@ class AdvancedTriangle
 {
     static void Main()
     {
+        Console.Title = "Problem 8. Isocleses Triangle - Advanced";
+
         int n = int.Parse(Console.ReadLine()); // read the height of the triangle
 
         //To print a figure with empty spaces outside and 
@@ -40,4 +42,3 @@ class AdvancedTriangle
 
     }
 }
-

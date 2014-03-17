@@ -7,31 +7,31 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.DeclareVariables", "01.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.FloatOrDouble", "02.FloatOrDouble\02.FloatOrDouble.csproj", "{71738434-942F-4F7B-A3BF-3D1C119C0B1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CompareFloats", "03.CompareFloats\03.CompareFloats.csproj", "{71C9D264-9C03-42E3-8492-31D8B5DC8998}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.CompareFloats", "03.CompareFloats\13.CompareFloats.csproj", "{71C9D264-9C03-42E3-8492-31D8B5DC8998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.VarsInHexFormat", "04.VarsInHexFormat\04.VarsInHexFormat.csproj", "{C49767A5-FB33-4387-AB2C-23C54770F9A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.VarsInHexFormat", "04.VarsInHexFormat\03.VarsInHexFormat.csproj", "{C49767A5-FB33-4387-AB2C-23C54770F9A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.UnicodeValue", "05.UnicodeValue\05.UnicodeValue.csproj", "{D0717829-AC5A-47F5-A938-2B875B57DB3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.UnicodeValue", "05.UnicodeValue\04.UnicodeValue.csproj", "{D0717829-AC5A-47F5-A938-2B875B57DB3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.BooleanVariable", "06.BooleanVariable\06.BooleanVariable.csproj", "{AB485411-EC31-4D26-A304-F4BC29AA87DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.BooleanVariable", "06.BooleanVariable\05.BooleanVariable.csproj", "{AB485411-EC31-4D26-A304-F4BC29AA87DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.StringsAndObjects", "07.StringsAndObjects\07.StringsAndObjects.csproj", "{34CC10B3-6BD6-4F69-857B-2FBCEE19B23C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.StringsAndObjects", "07.StringsAndObjects\06.StringsAndObjects.csproj", "{34CC10B3-6BD6-4F69-857B-2FBCEE19B23C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.QuotesInStrings", "08.QuotesInStrings\08.QuotesInStrings.csproj", "{53FF1EC0-B1CF-4AAB-997A-C7B6C485E2E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.QuotesInStrings", "08.QuotesInStrings\07.QuotesInStrings.csproj", "{53FF1EC0-B1CF-4AAB-997A-C7B6C485E2E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.IsoscelesTriangle", "09.IsoscelesTriangle\09.IsoscelesTriangle.csproj", "{E7685C1A-43A6-4136-9458-8C157DBEBF50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.IsoscelesTriangle", "09.IsoscelesTriangle\08.IsoscelesTriangle.csproj", "{E7685C1A-43A6-4136-9458-8C157DBEBF50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.ExchangeValues", "10.ExchangeValues\10.ExchangeValues.csproj", "{8FA45C5D-E90F-43DD-9151-48DD966A276E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.ExchangeValues", "10.ExchangeValues\09.ExchangeValues.csproj", "{8FA45C5D-E90F-43DD-9151-48DD966A276E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.PrintASCIITable", "14.PrintASCIITable\14.PrintASCIITable.csproj", "{78265124-C014-4E5F-B969-023313332C8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.NullValues", "13.NullValues\13.NullValues.csproj", "{6F4A8750-F0F9-4C76-8373-190C1BD10B08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.NullValues", "13.NullValues\12.NullValues.csproj", "{6F4A8750-F0F9-4C76-8373-190C1BD10B08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.EmployeeData", "11.EmployeeData\11.EmployeeData.csproj", "{8DB2362A-46FC-4F71-BFA9-FDF86BA25660}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.EmployeeData", "11.EmployeeData\10.EmployeeData.csproj", "{8DB2362A-46FC-4F71-BFA9-FDF86BA25660}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.BankAccount", "12.BankAccountData\12.BankAccount.csproj", "{0D3F82B5-3F83-4C7F-943E-FED3BC2B7D89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.BankAccount", "12.BankAccountData\11.BankAccount.csproj", "{0D3F82B5-3F83-4C7F-943E-FED3BC2B7D89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.IsoscelesTriangle-Var2", "09.IsoscelesTriangleVariant2\09.IsoscelesTriangle-Var2.csproj", "{4A425398-ADCE-46B3-AA6A-82BECBD169AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.IsoscelesTriangle-Var2", "09.IsoscelesTriangleVariant2\08.IsoscelesTriangle-Var2.csproj", "{4A425398-ADCE-46B3-AA6A-82BECBD169AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

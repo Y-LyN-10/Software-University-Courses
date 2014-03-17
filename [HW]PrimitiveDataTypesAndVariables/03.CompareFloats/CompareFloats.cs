@@ -1,9 +1,10 @@
-﻿// Problem 3. Comparing Floats
-// Write a program that safely compares floating-point numbers with 
-// precision eps = 0.000001. Note that we cannot directly compare two 
-// floating-point numbers a and b by a==b because of the nature of the 
-// floating-point arithmetic. Therefore, we assume two numbers are equal 
-// if they are more closely to each other than a fixed constant eps. 
+﻿// Problem 13.*  Comparing Floats
+// Write a program that safely compares floating-point numbers (double) 
+// with precision eps = 0.000001. Note that we cannot directly compare 
+// two floating-point numbers a and b by a==b because of the nature of 
+// the floating-point arithmetic. Therefore, we assume two numbers are 
+// equal if they are more closely to each other than a fixed constant eps. 
+// Example: 5.00000005 and 5.00000001 --> True
 
 using System;
 
@@ -11,7 +12,7 @@ class CompareFloats
 {
     static void Main()
     {
-        Console.Title = "Problem 3. Comparing Floats";
+        Console.Title = "Problem 13. Comparing Floats";
 
         //Read numbers from the console
         Console.WriteLine("Enter the first number: ");

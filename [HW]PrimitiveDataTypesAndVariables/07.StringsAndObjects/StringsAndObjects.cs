@@ -4,7 +4,7 @@ class StringsAndObjects
 {
     static void Main()
     {
-        Console.Title = "Problem 7. Strings and Objects";
+        Console.Title = "Problem 6. Strings and Objects";
 
         // Declare two string variables and assign them with “Hello” and “World”. 
         string hello = "Hello";

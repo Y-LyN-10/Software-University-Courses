@@ -1,4 +1,4 @@
-﻿// Problem 8. Quotes in Strings
+﻿// Problem 7. Quotes in Strings
 // Declare two string variables and assign them with following value:
 // The "use" of quotations causes difficulties.
 // Do the above in two different ways: with and without using quoted strings. 
@@ -10,7 +10,7 @@ class QuotesInStrings
 {
     static void Main()
     {
-        Console.Title = "Problem 8. Quotes in Strings"; //I just love this command, so... it will be everywhere, lol.
+        Console.Title = "Problem 7. Quotes in Strings"; //I just love this command, so... it will be everywhere, lol.
 
         string quoteVariant1 = "The \"use\" of quotations causes difficulties.";
         string quoteVariant2 = @"The ""use"" of quotations causes difficulties.";
