@@ -1,0 +1,31 @@
+﻿   
+   Problem 1. Play with Visual Studio
+
+   Familiarize yourself with Microsoft Visual Studio (if you already have it installed) or 
+   install Visual Studio (or Visual Studio Express) at your laptop or home computer. 
+   Search in Internet for the correct download link:
+   http://google.com/search?q=download+visual+studio.
+   Start Visual Studio and play with it. 
+   Create a simple C# program (console application), compile and run it.
+
+   Hello! This is my homework.
+   Problem 1 is done, of course. :) 
+   I am well familiarized with Visual Studio.
+
+   As you see, I also added some .txt files to the solution.
+   You can do this too when you press CTRL+SHIFT+A and choose 
+   what kind of item you want to add ;)
+
+   ------------------------------------------------------------------------------------------------
+
+   Problem 2. Blank Solution in Visual Studio
+
+   Create a blank solution in Visual Studio called “Intro-Programming-Homework”. 
+   This solution will hold all your homework projects, code and files. 
+   For each problem (exercises) add a separate project with self-descriptive 
+   name like “Hello-World” and “Print-Your-Name”. 
+
+   Yeah, it WAS blank... :D
+     
+
+		

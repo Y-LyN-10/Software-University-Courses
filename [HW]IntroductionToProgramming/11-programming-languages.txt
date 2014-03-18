@@ -1,0 +1,55 @@
+Problem 11. Programming Languages
+Perform a research (e.g. in Google or Wikipedia) and provide a short 
+list with information about the most popular programming languages. 
+How similar are they to C#? How do they differ from C#? Write in a text 
+file called “programming-languages.txt” at least five languages along with 
+2-3 sentences about each of them. Use English.
+--------------------------------------------------------------------------
+
+Most Popular Coding Languages of 2014:
+
+http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
+http://blog.codeeval.com/codeevalblog/2014
+
+How do they differ from C#?
+
+C and C# are two different computer programming languages. C# is a multi-paradigm 
+programming language. It's based on the C programming language. C was originally 
+developed between 1969 and 1973. It has a free-format program source code. 
+C# is an object oriented programming language and it's one of the newest programming 
+languages. It is a good that this C# becomes a very popular language for a number of 
+reasons. One of the key reasons is Microsoft and the promises of .NET.
+Microsoft says that C# brings the power of C++ with the ease of Visual Basic. 
+Visual Basic is really no easier than programming C#. In fact, you can actually write 
+many programs with less code using C#. 
+
+C# was meant to be an advance over both C++ and Java as a general purpose programming 
+language. Although it can be argued that some of its features are a step backward, C# 
+clearly includes some constructs that move it beyond its predecessors. Although C# 
+removes some of the features of C++ that cause programmers a lot of grief, no power 
+or functionality was really lost. Some of the programming errors that are easy to 
+create in C++ can be totally avoided in C#.  
+
+Another language that has gotten lots of attention is Java. Java, like C++ and C#, 
+is based on C. Java and C# are similar programming languages that are statically, 
+strongly, and manifestly typed, both are class-based object-oriented, both are designed 
+with semi-interpretation or runtime compilation in mind, both use garbage-collection, 
+and both are "curly brace languages" like C and C++. 
+
+There is no sense to compare C # with other languages in that list - like Pearl, 
+Delphi, Pascal. They a little bit old-fashioned in my mind. And as we see, their popularity 
+is going down very fast...
+
+Ruby is ranked among the top 10 on most of the indices that measure the growth and
+popularity of programming languages worldwide. Ruby is a dynamic, open source with 
+a focus on simplicity and productivity. Its fans call it a beautiful, artful 
+language, which elegant syntax is natural to read and easy to write.
+
+And what about PHP? Most programmers are convinced that PHP is good for small projects 
+only, and you can't develop too complex and huge projects with it, but I've read a lot 
+of opposing views about that. However, many PHP developers are in sure, that PHP is 
+“more open” that C#, because C# is backed by Microsoft where PHP doesn't have 1 single 
+huge rich company behind it ... which clearly is a benefit. Of course, it's not in my 
+competence to compare languages like these, even when I'm a beginner in programming. 
+I will understand more about the differences from C# and other languages, as I start 
+to learn them too.

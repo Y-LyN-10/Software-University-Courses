@@ -13,4 +13,4 @@ class HelloCSharp
 
 // System.Console.WriteLine() is the same like if we write 
 // "using System" and "Console.WriteLine()". 
-// It's good if we use a "using" only once... ot twice ;)
+// It's good if we need this "using" only once... ot twice ;)

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-02.HelloVisualStudio", "HelloVisualStudio\01-02.HelloVisualStudio.csproj", "{8B8844C8-93C8-4E14-9160-4DACDFF4B963}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.HelloWorld", "04.HelloCSharp\04.HelloWorld.csproj", "{B4C7E503-2366-46CD-928F-E243777AB4DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.YourName", "05.YourName\05.YourName.csproj", "{2B03C0B7-25E2-43AA-9998-FBF07B002272}"
@@ -25,7 +23,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.AgeAfter10Years", "15.Ag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16-17.LongSequence", "16-17.LongSequence\16-17.LongSequence.csproj", "{4DFDBD2B-25AA-4985-ABCB-147B556043C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.PlayWithMSDN", "03.PlayWithMSDN\03.PlayWithMSDN.csproj", "{68D6D7CD-3ED9-4231-939A-93AA94EC9614}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01, 02, 11, 12 and 13", "01, 02, 11, 12 and 13", "{54D7E826-2F2D-457A-A473-53756C6EFD7C}"
+	ProjectSection(SolutionItems) = preProject
+		01,02-VisualStudioFamiliarization .txt = 01,02-VisualStudioFamiliarization .txt
+		11-programming-languages.txt = 11-programming-languages.txt
+		12-list-of-IDEs.txt = 12-list-of-IDEs.txt
+		13-csharp-and-dot-net-framework.txt = 13-csharp-and-dot-net-framework.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.PlayWithMSDN", "03.PlayWithMSDN\03.PlayWithMSDN.csproj", "{048E6429-F6A1-4F20-8338-C181D884941A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +39,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8B8844C8-93C8-4E14-9160-4DACDFF4B963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B8844C8-93C8-4E14-9160-4DACDFF4B963}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B8844C8-93C8-4E14-9160-4DACDFF4B963}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B8844C8-93C8-4E14-9160-4DACDFF4B963}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B4C7E503-2366-46CD-928F-E243777AB4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B4C7E503-2366-46CD-928F-E243777AB4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4C7E503-2366-46CD-928F-E243777AB4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -77,10 +79,10 @@ Global
 		{4DFDBD2B-25AA-4985-ABCB-147B556043C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DFDBD2B-25AA-4985-ABCB-147B556043C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DFDBD2B-25AA-4985-ABCB-147B556043C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68D6D7CD-3ED9-4231-939A-93AA94EC9614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68D6D7CD-3ED9-4231-939A-93AA94EC9614}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68D6D7CD-3ED9-4231-939A-93AA94EC9614}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68D6D7CD-3ED9-4231-939A-93AA94EC9614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{048E6429-F6A1-4F20-8338-C181D884941A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{048E6429-F6A1-4F20-8338-C181D884941A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{048E6429-F6A1-4F20-8338-C181D884941A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{048E6429-F6A1-4F20-8338-C181D884941A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
