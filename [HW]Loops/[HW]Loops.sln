@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.MinMaxAverage", "03.Find
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.CalculateNByFormula", "07.CalculateNByFormula\07.CalculateNByFormula.csproj", "{2C0A6335-E4B7-432C-A4F3-411CD75554A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.PrintADeck", "04.PrintADeck\04.PrintADeck.csproj", "{D7169906-0C6C-4BEE-98C6-FC701C764378}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2C0A6335-E4B7-432C-A4F3-411CD75554A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C0A6335-E4B7-432C-A4F3-411CD75554A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C0A6335-E4B7-432C-A4F3-411CD75554A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7169906-0C6C-4BEE-98C6-FC701C764378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7169906-0C6C-4BEE-98C6-FC701C764378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7169906-0C6C-4BEE-98C6-FC701C764378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7169906-0C6C-4BEE-98C6-FC701C764378}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

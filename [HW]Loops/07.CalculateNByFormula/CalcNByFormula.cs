@@ -22,20 +22,20 @@ class CalcNByFormula
         int factorielOfK = 1;
         int factorielNSubK = 1;
 
-        //for (int i = 1; i <= N; i++)
-        //{
-        //    factorielOfN *= i;
-        //}
+        for (int i = 1; i <= N; i++)
+        {
+            factorielOfN *= i;
+        }
 
-        //for (int i = 1; i <= K; i++)
-        //{
-        //    factorielOfK *= i;
-        //}
+        for (int i = 1; i <= K; i++)
+        {
+            factorielOfK *= i;
+        }
 
-        //for (int i = 1; i <= nMinusK; i++)
-        //{
-        //    factorielNSubK *= i;
-        //}
+        for (int i = 1; i <= nMinusK; i++)
+        {
+            factorielNSubK *= i;
+        }
 
         result = (factorielOfN / (factorielOfK * factorielNSubK));
 
