@@ -19,9 +19,9 @@ class Rectangles
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
         Console.Write("Width: ");
-        uint width = uint.Parse(Console.ReadLine());
+        decimal width = decimal.Parse(Console.ReadLine());
         Console.Write("Height: ");
-        uint height = uint.Parse(Console.ReadLine());
+        decimal height = decimal.Parse(Console.ReadLine());
         Console.WriteLine("-------");
         Console.WriteLine("P = {0} \nS = {1}\n", (2*width + 2*height), (width*height));
     }

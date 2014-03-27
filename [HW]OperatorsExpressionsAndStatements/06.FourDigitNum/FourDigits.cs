@@ -19,7 +19,16 @@ class FourDigits
 {
     static void Main()
     {
+        Console.Write("Input number: ");
+        int a = (Console.Read() - 48);
+        int b = (Console.Read() - 48);
+        int c = (Console.Read() - 48);
+        int d = (Console.Read() - 48);
 
+        Console.WriteLine("Sum of digits: {0} ", (a + b + c + d));
+        Console.WriteLine("Reversed:  {3}{2}{1}{0}\n" + 
+                          "Last digit in front: {3}{0}{1}{2}\n" + 
+                          "Second and third digits exchanged: {0}{2}{1}{3}", a, b, c, d);
     }
 }
 
