@@ -10,12 +10,22 @@
 // 53.7	  |      9.129
 
 using System;
+using System.Globalization;
+using System.Threading;
 
 class Gravity
 {
     static void Main()
     {
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
+        Console.Write("How much do you weight? ");
+        double weightOnEarth = double.Parse(Console.ReadLine());
+      
+        //Calculate a percentage
+        double weigthOnMoon = weightOnEarth * 17 / 100;
+        Console.WriteLine("Now, imagine that you're walking trough the moon deserts..." +
+            "\nYour weight there is only {0} kilos! ", weigthOnMoon);
     }
 }
 

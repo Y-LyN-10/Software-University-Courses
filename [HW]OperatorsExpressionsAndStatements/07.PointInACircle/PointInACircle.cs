@@ -20,8 +20,8 @@ class PointInACircle
         double radius = 2;
 
         //Pythagorean theorem (a^2 + b^2 = c^2) checks if the point is within the circle.
-        bool inside = ((x * x) + (y * y) < (radius * radius));
-        
+        bool inside = ((x * x) + (y * y) <= (radius * radius));
+
         Console.WriteLine("inside? {0}", inside);
     }
 }

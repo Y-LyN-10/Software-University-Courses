@@ -11,11 +11,48 @@
 //Etc...
 
 using System;
+using System.Globalization;
+using System.Threading;
 
 class InCircleOutRect
 {
     static void Main()
     {
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
+        //Read the values
+        Console.Write("x = ");
+        decimal inputX = decimal.Parse(Console.ReadLine());
+        Console.Write("y = ");
+        decimal inputY = decimal.Parse(Console.ReadLine());
+        Console.WriteLine("-------");
+
+        //circle K({1, 1}, 1.5)
+        decimal x = inputX - 1;
+        decimal y = inputY - 1;
+        decimal r = 1.5m;
+
+        //Rectangle R 
+        decimal top = 1;
+        decimal left = -1;
+        decimal width = 6;
+        decimal height = 2;
+
+        // Boolean checks
+        bool withinCircle = (x * x) + (y * y) < (r * r);
+        bool outOfRect = ((top > x) || (width < x) || (left > y) || (height < y));
+        bool result;
+
+        if (withinCircle == true && outOfRect == true)
+        {
+            result = true;
+        }
+        else
+        {
+            result = false;
+        }
+
+        //Print the result using the conditional operator (?:)
+        Console.WriteLine("Inside the circle and outside of the rectangle? - {0}", result ? "Yes" : "No");
     }
 }

@@ -11,7 +11,35 @@ class CheckPrimeNums
 {
     static void Main()
     {
+        int inputNumber = int.Parse(Console.ReadLine());
+        int[] primes;
 
+        // Initialize array with all prime numbers < 100
+        primes = new int[]
+	    {
+	        3, 7, 11, 17, 23, 29, 37,
+	        47, 59, 71, 89, 97
+	    };
+
+        //Check with a method IsPrime();
+        bool prime = false;
+
+        if (inputNumber < 0)
+        {
+            prime = false;
+        }
+        else
+        {
+            for (int i = 0; i < primes.Length; i++)
+            {
+                if (inputNumber == primes[i])
+                {
+                    prime = true;
+                }
+            }
+        }
+
+        //Print the boolean result
+        Console.WriteLine(prime);
     }
 }
-
