@@ -5,7 +5,7 @@
 //  Example: start = 17, end = 25, p = 2, comments = 20, 25; etc
 
 using System;
-//using System.Collections.Generic;
+using System.Collections.Generic;
 
 class DividableNumsInInterval
 {
@@ -17,32 +17,27 @@ class DividableNumsInInterval
         Console.Write("End: ");
         uint end = uint.Parse(Console.ReadLine());
 
-        Console.Write("p = ");
-        uint p = uint.Parse(Console.ReadLine());
-
-        //List<uint> comments = new List<uint>();
+        List<uint> comments = new List<uint>();
         int counter = 0;
 
         for (uint i = start; i <= end; i++)
         {
             if (i % 5 == 0)
             {
-                //comments.Add(i);
-                Console.Write(i + ", ");
-
+                comments.Add(i);
                 counter++;
+            }
 
-                if (counter == p)
-                {
-                    break;
-                }
+            if (i == end)
+            {
+                Console.WriteLine("p = {0}", counter);
             }
 
         }
 
-        //foreach (int number in comments)
-        //{
-        //    Console.Write(number + ", ");
-        //}
+        foreach (int number in comments)
+        {
+            Console.Write(number + ", ");
+        }
     }
 }
