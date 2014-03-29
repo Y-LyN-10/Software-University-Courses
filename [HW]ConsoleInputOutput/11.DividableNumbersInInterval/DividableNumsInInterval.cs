@@ -27,13 +27,9 @@ class DividableNumsInInterval
                 comments.Add(i);
                 counter++;
             }
-
-            if (i == end)
-            {
-                Console.WriteLine("p = {0}", counter);
-            }
-
         }
+
+        Console.WriteLine("p = {0}", counter);
 
         foreach (int number in comments)
         {
