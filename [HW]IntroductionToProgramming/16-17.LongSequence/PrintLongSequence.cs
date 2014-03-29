@@ -16,9 +16,12 @@ class LongSequence
         Console.Title = "Problem 16.* Print Long Sequence";
 
         //Ok, this task is the same like "problem 9", where we printed the first 10 numbers
-        //of the same sequence. Here we just need to change the number of loops to 1000.
+        //of the same sequence. Here we just need to change the number of loops to 1001.
 
-        for (int i = 2; i <= 1000; i++)
+        Console.BufferWidth = Console.WindowWidth;
+        Console.BufferHeight = 70;
+
+        for (int i = 2; i <= 1001; i++)
         {
             if (i % 2 == 0)
             {
