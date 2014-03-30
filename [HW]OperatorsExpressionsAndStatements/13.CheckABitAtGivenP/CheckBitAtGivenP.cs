@@ -14,21 +14,17 @@ class CheckBitAtGivenP
 {
     static void Main()
     {
-        //From the lecture:
-        //How to get the bit at position p from a number n?
-        int p = 5;
-        int n = 291;               // 00000001 00100011
-        int nRightP = n >> p;      // 00000000 00001001
-        int bit = nRightP & 1;     // 00000000 00000001
-        Console.WriteLine(bit);    // 1
+        Console.Write("n = ");
+        int n = int.Parse(Console.ReadLine());
+        Console.Write("p = ");
+        int b = int.Parse(Console.ReadLine());
 
-        //How to set the bit at position p to 0?
-        //int p = 5;
-        //int n = 291;               // 00000001 00100011
-        //int mask = ~(1 << p);      // 11111111 11011111
-        //int result = n & mask;     // 00000001 00000011
-        //Console.WriteLine(result); // 259
+        int mask = 1 << b;
+        int addMask = n & mask;
 
+        bool bitValue = (addMask != 0);
 
+        string binaryNumber = Convert.ToString(n, 2).PadLeft(16, '0');
+        Console.WriteLine("Binary n: {0}\nBit @ p:  {1}", binaryNumber, bitValue);
     }
 }

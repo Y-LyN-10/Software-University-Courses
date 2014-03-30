@@ -16,7 +16,15 @@ class BitFromInt
 {
     static void Main()
     {
+        Console.Write("n = ");
+        int i = int.Parse(Console.ReadLine());
+        Console.Write("p = ");
+        int b = int.Parse(Console.ReadLine());
 
+        int mask = 1 << b;
+        int addMask = i & mask;
+
+        Console.WriteLine("Bit @ p: " + ((addMask != 0) ? "1" : "0").ToString());
     }
 }
 

@@ -12,11 +12,42 @@
 
 using System;
 
-class Program
+class BitExchange
 {
     static void Main()
     {
+        uint num = uint.Parse(Console.ReadLine()); //prev: inputNumber
+        string binaryNumber = Convert.ToString(num, 2).PadLeft(32, '0');
 
+        uint result = num;
+
+        uint mask1 = 7 << 3;
+        uint mask2 = 7 << 24;
+
+        // Take bits 3, 4 5 and 24, 25, 26
+        uint bits345 = num & mask1;
+        uint bits2456 = num & mask2;
+
+        // put bits in position
+        bits345 <<= 21;
+        bits2456 >>= 21;
+
+        //Replace binary digits with zeroes in bits 3, 4, 5 and 24, 25, 26
+        result = ~mask1 & result;
+        result = ~mask2 & result;
+
+        //place bits in position
+        result = result | bits345;
+        result = result | bits2456;
+
+        string binaryResult = Convert.ToString(result, 2).PadLeft(32, '0');
+
+        //output
+
+        Console.WriteLine("\nBinary of n:   {0}", binaryNumber);
+        Console.WriteLine("Binary result: {0}", binaryResult);
+
+        Console.WriteLine("Result:        " + result);
     }
 }
 
