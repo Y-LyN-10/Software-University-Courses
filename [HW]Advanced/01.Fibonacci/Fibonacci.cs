@@ -22,15 +22,21 @@ class Fibonacci
         BigInteger secondNum = 1;
         BigInteger nextNum;
 
-        for (int i = 1; i <= n; i++)
+        if (n == 1) return firstNum;
+        if (n == 2) return secondNum;
+        else
         {
-            nextNum = firstNum + secondNum;
-            firstNum = secondNum;
-            secondNum = nextNum;
 
-            if (i == n)
+            for (int i = 1; i <= n; i++)
             {
-                return nextNum;
+                nextNum = firstNum + secondNum;
+                firstNum = secondNum;
+                secondNum = nextNum;
+
+                if (i == n)
+                {
+                    return nextNum;
+                }
             }
         }
 
