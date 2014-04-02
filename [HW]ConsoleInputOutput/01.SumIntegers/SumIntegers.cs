@@ -14,13 +14,9 @@ class SumIntegers
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
-        Console.Write("Enter first number: ");
+        Console.WriteLine("Enter three numbers: ");
         double firstNumber = double.Parse(Console.ReadLine());
-
-        Console.Write("Enter second number: ");
         double secondNumber = double.Parse(Console.ReadLine());
-
-        Console.Write("Enter third number: ");
         double thirdNumber = double.Parse(Console.ReadLine());
 
         double sum = (firstNumber + secondNumber) + thirdNumber;

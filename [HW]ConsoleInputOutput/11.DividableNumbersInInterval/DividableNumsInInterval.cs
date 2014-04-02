@@ -31,7 +31,7 @@ class DividableNumsInInterval
 
         Console.WriteLine("p = {0}", counter);
 
-        foreach (int number in comments)
+        foreach (uint number in comments)
         {
             Console.Write(number + ", ");
         }
