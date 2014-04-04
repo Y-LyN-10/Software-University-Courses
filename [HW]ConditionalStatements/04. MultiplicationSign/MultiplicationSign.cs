@@ -17,20 +17,19 @@ class Program
         //Check for a border case first
         if (a == 0 || b == 0 || c == 0)
         {
-            Console.WriteLine("\n The product is (0)");
+            Console.WriteLine("\nThe product is (0)");
         }
         
         //There is no need to calculate the numbers. We need only to check
         //if the numbers are positive or negative, because of math "laws". 
-
         else if ((a < 0 && b > 0 && c > 0) || (b < 0 && a > 0 && c > 0) 
               || (c < 0 && b > 0 && a > 0) || (a < 0 && b < 0 && c < 0))
         {
-            Console.WriteLine("\n The product of the 3 numbers is negative (-)");
+            Console.WriteLine("\nThe product of the 3 numbers is negative (-)");
         }
         else
         {
-            Console.WriteLine("\n The product of the 3 numbers is positive (+)");
+            Console.WriteLine("\nThe product of the 3 numbers is positive (+)");
         }
     }
 }
