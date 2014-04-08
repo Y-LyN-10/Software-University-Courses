@@ -8,37 +8,35 @@
 // for given n and k (1 < k < n < 100). Try to use only two loops. 
 
 using System;
+using System.Numerics;
 
 class CalcNByFormula
 {
     static void Main()
     {
-        int N = int.Parse(Console.ReadLine());
-        int K = int.Parse(Console.ReadLine());
-        int nMinusK = N - K;
+        BigInteger N = BigInteger.Parse(Console.ReadLine());
+        BigInteger K = BigInteger.Parse(Console.ReadLine());
+        BigInteger nMinusK = N - K;
 
-        int result;
-        int factorielOfN = 1;
-        int factorielOfK = 1;
-        int factorielNSubK = 1;
+        BigInteger result;
+        BigInteger factorielOfN = 1;
+        BigInteger factorielOfK = 1;
+        BigInteger factorielNSubK = 1;
 
         for (int i = 1; i <= N; i++)
         {
+            if (i <= K)
+            {
+                factorielOfK *= i;
+            }
+            if (i <= (N-K))
+            {
+                factorielNSubK *= i;
+            }
             factorielOfN *= i;
         }
 
-        for (int i = 1; i <= K; i++)
-        {
-            factorielOfK *= i;
-        }
-
-        for (int i = 1; i <= nMinusK; i++)
-        {
-            factorielNSubK *= i;
-        }
-
-        result = (factorielOfN / (factorielOfK * factorielNSubK));
-
+        result = factorielOfN / (factorielOfK * factorielNSubK);
         Console.WriteLine(result);
     }
 }
