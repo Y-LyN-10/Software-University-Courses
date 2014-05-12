@@ -1,0 +1,3 @@
+$ cd workspace/[HW]-Java-1/src
+$ javac SumTwoNumbers.java
+$ java SumTwoNumbers
