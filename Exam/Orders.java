@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
@@ -12,48 +13,37 @@ public class Orders {
 
 		int n = Integer.parseInt(input.nextLine());
 
-		// lamer String[] something = input.nextLine().split(" ");
-		// solution System.out.println(something[2] + ": " + something[0] + " "
-		// + something[1]);
-		// Expected output: apples: steve 8
-
-		HashMap<String, TreeMap<String, Integer>> orders = new HashMap<String, TreeMap<String, Integer>>();
+		HashMap<String, TreeMap<String, Integer>> orders = new LinkedHashMap<String, TreeMap<String, Integer>>();
 				
 		for (int i = 0; i < n; i++) {
 
 			String line = input.nextLine();
 			String[] singleOrder = line.split(" ");
 			String name = singleOrder[0];
-			
 			int howMany = Integer.parseInt(singleOrder[1]);
-			String product = singleOrder[2];
-			
-			if (orders.containsKey(product)) {
-				howMany += Integer.parseInt(singleOrder[1]);
-			}
+			String fruit = singleOrder[2];
 
-			TreeMap<String, Integer> numsAndNames = orders.get(product);
+			TreeMap<String, Integer> numsAndFruits = orders.get(fruit);
 
-			if (numsAndNames == null) {
-				numsAndNames = new TreeMap<String, Integer>();
-				orders.put(product, numsAndNames);
+			if (numsAndFruits == null) {
+				numsAndFruits = new TreeMap<String, Integer>();
+				orders.put(fruit, numsAndFruits);
 			}
-			numsAndNames.put(name, howMany);
+			numsAndFruits.put(name, howMany);
 		}
 
-		Set<String> products = orders.keySet();
+		Set<String> fruits = orders.keySet();
 		
-		//print result
-		for (String product : products) {
-			System.out.printf("%s: ", product);
-			TreeMap<String, Integer> numsAndNames = orders.get(product);
+		for (String fruit : fruits) {
+			System.out.printf("%s: ", fruit);
+			TreeMap<String, Integer> numsAndFruits = orders.get(fruit);
 			
-			for (Map.Entry<String, Integer> entry : numsAndNames.entrySet()) {
+			for (Map.Entry<String, Integer> entry : numsAndFruits.entrySet()) {
 				String name = entry.getKey();
 				int howMany = entry.getValue();
 				
 				System.out.printf("%s %s", name, howMany);
-				if(!(name.equals(numsAndNames.lastKey()))){
+				if(!(name.equals(numsAndFruits.lastKey()))){
 					System.out.printf(", ");					
 				}
 			}
