@@ -1,0 +1,42 @@
+html,body, h1, table, td, tr, th, thead, tbody, tfoot{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 3em;
+}
+#main{
+    width: 400px;
+}
+table, tr, td, th{
+    border: 1px solid black;
+}
+tr{
+    height: 100px;
+}
+td{
+    padding: 5px;
+    width: 100px;
+}
+.half{
+    height: 50px;
+}
+#sub{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8em;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.up{
+    vertical-align: top;
+}
+.down{
+    vertical-align: bottom;
+}
