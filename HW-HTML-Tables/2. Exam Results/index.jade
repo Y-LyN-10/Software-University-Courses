@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Task 2 - Exam Results
+        link(href='inc/style.css', rel='stylesheet', type='text/css')
+    body
+        - firstNames = ['Gosho', 'Tosho', 'Pesho', 'Gencho', 'Draga'];
+        - lastNames = ['Goshev', 'Toshev', 'Pesho', 'Genchev', 'Draganova'];
+
+        table
+            thead
+                tr
+                    th(colspan=4): h2 Web fundamentals exam results
+                tr
+                    th.number №
+                    th First name
+                    th Last name
+                    th.score Score
+            tbody
+                -for(var i = 0; i < 5; i++)
+                    tr
+                        td.number 0#{i+1}
+                        td #{firstNames[i]}
+                        td #{lastNames[i]}
+                        td.score 500
+            tfoot
+                tr
+                    td(colspan=4) Average score from 05 participants: 500
