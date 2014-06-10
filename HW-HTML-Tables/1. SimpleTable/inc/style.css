@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+table{
+    border: 1px solid black;
+    width: 390px;
+}
+h1{
+    margin-top: 0;
+    font-weight: bold;
+}
+table, tr{
+    display: inline-table;
+}
+thead{
+    font-family: sans-serif;
+}
+td{
+    padding-left: 5px;
+    font-family: arial, sans-serif;
+}
+img{
+    display: inline;
+}
