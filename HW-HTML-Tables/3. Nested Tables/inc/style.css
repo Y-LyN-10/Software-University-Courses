@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+table, td{
+    border: 1px solid black;
+    width: 200px;
+}
+td{
+    padding: 10px;
+}
+h1{
+    font-size: 3.5em;
+    font-weight: normal;
+    margin:0;
+}
+tr{
+    padding: 30px;
+}
