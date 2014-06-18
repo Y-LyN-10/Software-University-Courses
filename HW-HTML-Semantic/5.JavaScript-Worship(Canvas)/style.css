@@ -1,0 +1,12 @@
+body{
+    margin: 2px;
+    padding: 0;
+}
+canvas {
+    border: 3px dotted red;
+}
+
+@font-face {
+    font-family: 'NeutraText-Bold';
+    src: url('https://www.dropbox.com/s/3ih7r6ah9j9g1xk/NeutraText-Bold.ttf');
+}
