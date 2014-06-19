@@ -4,9 +4,11 @@ body{
 }
 canvas {
     border: 3px dotted red;
+	font-family: "NeutraText-Bold", "Arial";
 }
 
 @font-face {
-    font-family: 'NeutraText-Bold';
-    src: url('https://www.dropbox.com/s/3ih7r6ah9j9g1xk/NeutraText-Bold.ttf');
+    font-family: 'NeutraText-Bold', 'Arial';
+    src: url('font/NeutraText-Bold.ttf') format('truetype'),
+         url('font/NeutraText Bold.otf') format('opentype');
 }
