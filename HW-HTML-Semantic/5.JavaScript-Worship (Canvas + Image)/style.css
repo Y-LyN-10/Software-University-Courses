@@ -1,0 +1,7 @@
+body{
+    margin: 2px;
+    padding: 0;
+}
+canvas {
+    border: 3px dotted red;
+}
