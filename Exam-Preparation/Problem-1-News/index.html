@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <title>Task1</title>
@@ -10,12 +10,11 @@
     <ul>
         {{#news}}
         <li>
-            <div>
-                <img src="{{image}}" alt="{{title}}"/>
-                <a href="#">{{title}}</a>
-                <p class="date">{{Date}}</p>
-                <p>{{theArticle}}</p>
-            </div>
+            <img src="{{image}}" alt="{{title}}"/>
+            <strong><a href="#">{{title}}</a></strong>
+            <div class="date">{{date}}</div>
+            <article>{{info}}</article>
+        </li>
         </tr>
         {{/news}}
         </tbody>
