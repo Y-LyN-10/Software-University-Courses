@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script id="news-articles-template" type="text/x-handlebars-template">
+    <ul>
+        {{#news}}
+        <li>
+            <div>
+                <img src="{{image}}" alt="{{title}}"/>
+                <a href="#">{{title}}</a>
+                <p class="date">{{Date}}</p>
+                <p>{{theArticle}}</p>
+            </div>
+        </tr>
+        {{/news}}
+        </tbody>
+    </ul>
+</script>
+<script src="libs/handlebars.min.js"></script>
+<script src="news.js"></script>
+</body>
+</html>
