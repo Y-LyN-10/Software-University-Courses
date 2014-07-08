@@ -1,0 +1,7 @@
+csharp-basics
+java-basics
+javascript-basics
+php-basics
+seminars
+teamwork-personal-skills
+web-fundamentals
