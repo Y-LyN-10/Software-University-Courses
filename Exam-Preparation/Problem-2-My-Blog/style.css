@@ -1,0 +1,11 @@
+body {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+span.clear {
+  position: absolute;
+  display: block;
+  top: 5px;
+  right: 0px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer; }
