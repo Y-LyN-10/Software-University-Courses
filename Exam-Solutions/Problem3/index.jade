@@ -1,0 +1,57 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Task 3 - Contact Form
+        link(href='styles/style.css', rel='stylesheet', type='text/css')
+    body
+        #wrapper
+            h1 Please fill the form below:
+
+            aside
+                h2 How to fill the form?
+                p.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur expedita quam.
+                    Ex, quidem, tenetur. Recusandae rerum, sed vero.
+                p.
+                    Cum cupiditate iste laborum nobis numquam porro quibusdam quidem ratione recusandae veniam!
+                    Amet beatae dolor ducimus ea eligendi excepturi facere, iure iusto magni, modi nam nobis officia
+                    quae qui, repudiandae!
+                p.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae rerum, sed vero.
+                    Ex, quidem, tenetur.Dixi.
+
+            form#login-details
+                fieldset
+                    legend Login Details
+
+                    label Username
+                    .box: input(class="username", type="text", name="name", autocomplete="on", placeholder="username",
+                    required=true)
+                    br
+                    label Password
+                    .box: input(class="pass", type="password", name="psswd", placeholder="password", required=true)
+                    br
+                    .submitBox: input.btn(type="submit", value="submit")
+
+            hr
+
+            form#personal-details
+                fieldset
+                    legend Personal Details
+                    label Name
+                    .box: input(type="text", name="usernm", autocomplete="on", placeholder="e.g. John Doe", required=true)
+                    br
+                    label Address
+                    .box: input(type="text", name="addrs", autocomplete="on", placeholder="e.g. 173 Wilson Rd.",
+                    required=true)
+                    br
+                    label City
+                    .box: input(type="text", name="city", autocomplete="on", placeholder="e.g. London",
+                    required=true)
+                    br
+                    label Country
+                    .box: input(type="text", name="cntry", autocomplete="on", placeholder="e.g. United Kingdom",
+                    required=true)
+                    br
+                    .submitBox: input.btn(type="submit", value="submit")
