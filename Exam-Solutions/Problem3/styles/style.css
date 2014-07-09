@@ -9,9 +9,9 @@ body {
 #wrapper {
   margin: 0 auto;
   margin-left: 70px;
-  width: 740px; }
+  width: 780px; }
   #wrapper form {
-    width: 500px;
+    width: 550px;
     margin-bottom: 20px; }
   #wrapper #personal-details input {
     background-image: url("../imgs/field-icon.png");
