@@ -1,0 +1,199 @@
+@mixin innerBoxes
+  padding: 10px
+  margin: 20px
+  border: 1px solid #999999
+
+@mixin simpleText
+  font-size: 10px
+  font-family: "Helvetica", "Arial", "Tahoma"
+  font-weight: 100
+  text-decoration: none
+  color: #999999
+
+@mixin colorBox
+  width: 15%
+  height: 80%
+  display: inline-block
+  border-radius: 20px
+
+@mixin vertical-gradient($top, $bottom)
+  background: $top /* Old browsers */
+  background: -moz-linear-gradient(top,  $top 0%, $bottom 100%) /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)) /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%) /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $top 0%,$bottom 100%) /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $top 0%,$bottom 100%) /* IE10+ */
+  background: linear-gradient(to bottom,  $top 0%,$bottom 100%) /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 ) /* IE6-9 */
+
+@mixin horizontal-gradient($left, $right)
+  background: $left /* Old browsers */
+  background: -moz-linear-gradient(left,  $left 0%, $right 100%) /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$left), color-stop(100%,$right)) /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  $left 0%,$right 100%) /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  $left 0%,$right 100%) /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  $left 0%,$right 100%) /* IE10+ */
+  background: linear-gradient(to right,  $left 0%,$right 100%) /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left', endColorstr='$right',GradientType=0 ) /* IE6-9 */
+
+@mixin diagonal-gradient($top-left, $bottom-right)
+  background: $top-left /* Old browsers */
+  background: -moz-linear-gradient(top left,  $top-left 0%, $bottom-right 100%) /* FF3.6+ */
+  background: -webkit-gradient(linear, top left, bottom right, color-stop(0%,$top-left), color-stop(100%,$bottom-right)) /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top left,  $top-left 0%,$bottom-right 100%) /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top left,  $top-left 0%,$bottom-right 100%) /* Opera 11.10+ */
+  background: -ms-linear-gradient(top left,  $top-left 0%,$bottom-right 100%) /* IE10+ */
+  background: linear-gradient(to bottom right,  $top-left 0%,$bottom-right 100%) /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top-left', endColorstr='$bottom-right',GradientType=0 ) /* IE6-9 */
+
+@mixin radial-gradient($center, $outside)
+  background: $center /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  $center 0%, $outside 100%) /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$center), color-stop(100%,$outside)) /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  $center 0%,$outside 100%) /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  $center 0%,$outside 100%) /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  $center 0%,$outside 100%) /* IE10+ */
+  background: radial-gradient(ellipse at center,  $center 0%,$outside 100%) /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$center', endColorstr='$outside',GradientType=1 ) /* IE6-8 fallback on horizontal gradient */
+
+html, body, div, header, footer, nav, ul, li, section, article, p, h1, h2, h3, a
+  margin: 0
+  padding: 0
+
+body
+  width: 100%
+  background-color: #999999
+  color: #999999
+  text-decoration: none
+  font-family: arial
+  text-align: center
+
+#wrapper
+  position: absolute
+  width: 70%
+  margin-left: 15%
+  background-color: #ffffff
+
+  >header>h1
+    font-size: 2.5em
+    color: #666666
+
+  nav>ul>li
+    margin: 20px
+    padding: 10px
+    display: inline-block
+    border: 1px solid #999999
+
+    a
+      color: #999999
+      text-decoration: none
+
+    &:hover
+      +vertical-gradient(gray, white)
+
+      a
+        color: #ffffff
+
+#wrapper>header, section.linear
+  padding: 10px
+  margin: 20px
+  border: 2px solid #999999
+
+article
+  +innerBoxes
+
+#vertical, #horizontal, #diagonal, #radial
+  +simpleText
+
+#linear
+  text-decoration: underline
+  font-size: 0.8em
+  font-weight: lighter
+  color: #666666
+
+section.linear
+  padding: 20px
+
+.innerContainer
+  height: 200px
+  margin-top: 20px
+
+.linear article:nth-of-type(1) div.innerContainer div
+  +colorBox
+
+  &.purple
+    +vertical-gradient(purple, white)
+  &.blue
+    +vertical-gradient(blue, white)
+  &.green
+    +vertical-gradient(green, white)
+  &.yellow
+  +vertical-gradient(yellow, white)
+  &.orange
+    +vertical-gradient(orange, white)
+  &.red
+    +vertical-gradient(red, white)
+
+.linear article:nth-of-type(2) div.innerContainer div
+  +colorBox
+
+  &.purple
+    +horizontal-gradient(purple, white)
+  &.blue
+    +horizontal-gradient(blue, white)
+  &.green
+    +horizontal-gradient(green, white)
+  &.yellow
+    +horizontal-gradient(yellow, white)
+  &.orange
+    +horizontal-gradient(orange, white)
+  &.red
+    +horizontal-gradient(red, white)
+
+.linear article:nth-of-type(3) div.innerContainer div
+  +colorBox
+
+  &.purple
+    +diagonal-gradient(purple, white)
+  &.blue
+    +diagonal-gradient(blue, white)
+  &.green
+    +diagonal-gradient(green, white)
+  &.yellow
+    +diagonal-gradient(yellow, white)
+  &.orange
+    +diagonal-gradient(orange, white)
+  &.red
+    +diagonal-gradient(red, white)
+
+.radial article div.innerContainer div
+  +colorBox
+
+  &.purple
+    +radial-gradient(purple, white)
+  &.blue
+    +radial-gradient(blue, white)
+  &.green
+    +radial-gradient(green, white)
+  &.yellow
+    +radial-gradient(yellow, white)
+  &.orange
+    +radial-gradient(orange, white)
+  &.red
+    +radial-gradient(red, white)
+
+footer
+  padding: 30px
+
+footer>ul>li
+  list-style: none
+
+  a
+    color: #666666
+    text-decoration: none
+
+@media screen and (max-width: 720px)
+  #wrapper
+    margin: 0
+    padding: 0
+    width: 100%

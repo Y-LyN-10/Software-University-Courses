@@ -1,0 +1,323 @@
+html, body, div, header, footer, nav, ul, li, section, article, p, h1, h2, h3, a {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  background-color: #999999;
+  color: #999999;
+  text-decoration: none;
+  font-family: arial;
+  text-align: center; }
+
+#wrapper {
+  position: absolute;
+  width: 70%;
+  margin-left: 15%;
+  background-color: white; }
+  #wrapper > header > h1 {
+    font-size: 2.5em;
+    color: #666666; }
+  #wrapper nav > ul > li {
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #999999; }
+    #wrapper nav > ul > li a {
+      color: #999999;
+      text-decoration: none; }
+    #wrapper nav > ul > li:hover {
+      background: gray;
+      background: -moz-linear-gradient(top, gray 0%, white 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, gray), color-stop(100%, white));
+      background: -webkit-linear-gradient(top, gray 0%, white 100%);
+      background: -o-linear-gradient(top, gray 0%, white 100%);
+      background: -ms-linear-gradient(top, gray 0%, white 100%);
+      background: linear-gradient(to bottom, gray 0%, white 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top', endColorstr='$bottom',GradientType=0 ); }
+      #wrapper nav > ul > li:hover a {
+        color: white; }
+
+#wrapper > header, section.linear {
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid #999999; }
+
+article {
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #999999; }
+
+#vertical, #horizontal, #diagonal, #radial {
+  font-size: 10px;
+  font-family: "Helvetica", "Arial", "Tahoma";
+  font-weight: 100;
+  text-decoration: none;
+  color: #999999; }
+
+#linear {
+  text-decoration: underline;
+  font-size: 0.8em;
+  font-weight: lighter;
+  color: #666666; }
+
+section.linear {
+  padding: 20px; }
+
+.innerContainer {
+  height: 200px;
+  margin-top: 20px; }
+
+.linear article:nth-of-type(1) div.innerContainer div {
+  width: 15%;
+  height: 80%;
+  display: inline-block;
+  border-radius: 20px;
+  background: yellow;
+  background: -moz-linear-gradient(top, yellow 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, yellow), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, yellow 0%, white 100%);
+  background: -o-linear-gradient(top, yellow 0%, white 100%);
+  background: -ms-linear-gradient(top, yellow 0%, white 100%);
+  background: linear-gradient(to bottom, yellow 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top', endColorstr='$bottom',GradientType=0 ); }
+  .linear article:nth-of-type(1) div.innerContainer div.purple {
+    background: purple;
+    background: -moz-linear-gradient(top, purple 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, purple), color-stop(100%, white));
+    background: -webkit-linear-gradient(top, purple 0%, white 100%);
+    background: -o-linear-gradient(top, purple 0%, white 100%);
+    background: -ms-linear-gradient(top, purple 0%, white 100%);
+    background: linear-gradient(to bottom, purple 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top', endColorstr='$bottom',GradientType=0 ); }
+  .linear article:nth-of-type(1) div.innerContainer div.blue {
+    background: blue;
+    background: -moz-linear-gradient(top, blue 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, blue), color-stop(100%, white));
+    background: -webkit-linear-gradient(top, blue 0%, white 100%);
+    background: -o-linear-gradient(top, blue 0%, white 100%);
+    background: -ms-linear-gradient(top, blue 0%, white 100%);
+    background: linear-gradient(to bottom, blue 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top', endColorstr='$bottom',GradientType=0 ); }
+  .linear article:nth-of-type(1) div.innerContainer div.green {
+    background: green;
+    background: -moz-linear-gradient(top, green 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, green), color-stop(100%, white));
+    background: -webkit-linear-gradient(top, green 0%, white 100%);
+    background: -o-linear-gradient(top, green 0%, white 100%);
+    background: -ms-linear-gradient(top, green 0%, white 100%);
+    background: linear-gradient(to bottom, green 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top', endColorstr='$bottom',GradientType=0 ); }
+  .linear article:nth-of-type(1) div.innerContainer div.orange {
+    background: orange;
+    background: -moz-linear-gradient(top, orange 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, orange), color-stop(100%, white));
+    background: -webkit-linear-gradient(top, orange 0%, white 100%);
+    background: -o-linear-gradient(top, orange 0%, white 100%);
+    background: -ms-linear-gradient(top, orange 0%, white 100%);
+    background: linear-gradient(to bottom, orange 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top', endColorstr='$bottom',GradientType=0 ); }
+  .linear article:nth-of-type(1) div.innerContainer div.red {
+    background: red;
+    background: -moz-linear-gradient(top, red 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, red), color-stop(100%, white));
+    background: -webkit-linear-gradient(top, red 0%, white 100%);
+    background: -o-linear-gradient(top, red 0%, white 100%);
+    background: -ms-linear-gradient(top, red 0%, white 100%);
+    background: linear-gradient(to bottom, red 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top', endColorstr='$bottom',GradientType=0 ); }
+
+.linear article:nth-of-type(2) div.innerContainer div {
+  width: 15%;
+  height: 80%;
+  display: inline-block;
+  border-radius: 20px; }
+  .linear article:nth-of-type(2) div.innerContainer div.purple {
+    background: purple;
+    background: -moz-linear-gradient(left, purple 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, purple), color-stop(100%, white));
+    background: -webkit-linear-gradient(left, purple 0%, white 100%);
+    background: -o-linear-gradient(left, purple 0%, white 100%);
+    background: -ms-linear-gradient(left, purple 0%, white 100%);
+    background: linear-gradient(to right, purple 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left', endColorstr='$right',GradientType=0 ); }
+  .linear article:nth-of-type(2) div.innerContainer div.blue {
+    background: blue;
+    background: -moz-linear-gradient(left, blue 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, blue), color-stop(100%, white));
+    background: -webkit-linear-gradient(left, blue 0%, white 100%);
+    background: -o-linear-gradient(left, blue 0%, white 100%);
+    background: -ms-linear-gradient(left, blue 0%, white 100%);
+    background: linear-gradient(to right, blue 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left', endColorstr='$right',GradientType=0 ); }
+  .linear article:nth-of-type(2) div.innerContainer div.green {
+    background: green;
+    background: -moz-linear-gradient(left, green 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, green), color-stop(100%, white));
+    background: -webkit-linear-gradient(left, green 0%, white 100%);
+    background: -o-linear-gradient(left, green 0%, white 100%);
+    background: -ms-linear-gradient(left, green 0%, white 100%);
+    background: linear-gradient(to right, green 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left', endColorstr='$right',GradientType=0 ); }
+  .linear article:nth-of-type(2) div.innerContainer div.yellow {
+    background: yellow;
+    background: -moz-linear-gradient(left, yellow 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, yellow), color-stop(100%, white));
+    background: -webkit-linear-gradient(left, yellow 0%, white 100%);
+    background: -o-linear-gradient(left, yellow 0%, white 100%);
+    background: -ms-linear-gradient(left, yellow 0%, white 100%);
+    background: linear-gradient(to right, yellow 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left', endColorstr='$right',GradientType=0 ); }
+  .linear article:nth-of-type(2) div.innerContainer div.orange {
+    background: orange;
+    background: -moz-linear-gradient(left, orange 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, orange), color-stop(100%, white));
+    background: -webkit-linear-gradient(left, orange 0%, white 100%);
+    background: -o-linear-gradient(left, orange 0%, white 100%);
+    background: -ms-linear-gradient(left, orange 0%, white 100%);
+    background: linear-gradient(to right, orange 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left', endColorstr='$right',GradientType=0 ); }
+  .linear article:nth-of-type(2) div.innerContainer div.red {
+    background: red;
+    background: -moz-linear-gradient(left, red 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, red), color-stop(100%, white));
+    background: -webkit-linear-gradient(left, red 0%, white 100%);
+    background: -o-linear-gradient(left, red 0%, white 100%);
+    background: -ms-linear-gradient(left, red 0%, white 100%);
+    background: linear-gradient(to right, red 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left', endColorstr='$right',GradientType=0 ); }
+
+.linear article:nth-of-type(3) div.innerContainer div {
+  width: 15%;
+  height: 80%;
+  display: inline-block;
+  border-radius: 20px; }
+  .linear article:nth-of-type(3) div.innerContainer div.purple {
+    background: purple;
+    background: -moz-linear-gradient(top left, purple 0%, white 100%);
+    background: -webkit-gradient(linear, top left, bottom right, color-stop(0%, purple), color-stop(100%, white));
+    background: -webkit-linear-gradient(top left, purple 0%, white 100%);
+    background: -o-linear-gradient(top left, purple 0%, white 100%);
+    background: -ms-linear-gradient(top left, purple 0%, white 100%);
+    background: linear-gradient(to bottom right, purple 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-left', endColorstr='$bottom-right',GradientType=0 ); }
+  .linear article:nth-of-type(3) div.innerContainer div.blue {
+    background: blue;
+    background: -moz-linear-gradient(top left, blue 0%, white 100%);
+    background: -webkit-gradient(linear, top left, bottom right, color-stop(0%, blue), color-stop(100%, white));
+    background: -webkit-linear-gradient(top left, blue 0%, white 100%);
+    background: -o-linear-gradient(top left, blue 0%, white 100%);
+    background: -ms-linear-gradient(top left, blue 0%, white 100%);
+    background: linear-gradient(to bottom right, blue 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-left', endColorstr='$bottom-right',GradientType=0 ); }
+  .linear article:nth-of-type(3) div.innerContainer div.green {
+    background: green;
+    background: -moz-linear-gradient(top left, green 0%, white 100%);
+    background: -webkit-gradient(linear, top left, bottom right, color-stop(0%, green), color-stop(100%, white));
+    background: -webkit-linear-gradient(top left, green 0%, white 100%);
+    background: -o-linear-gradient(top left, green 0%, white 100%);
+    background: -ms-linear-gradient(top left, green 0%, white 100%);
+    background: linear-gradient(to bottom right, green 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-left', endColorstr='$bottom-right',GradientType=0 ); }
+  .linear article:nth-of-type(3) div.innerContainer div.yellow {
+    background: yellow;
+    background: -moz-linear-gradient(top left, yellow 0%, white 100%);
+    background: -webkit-gradient(linear, top left, bottom right, color-stop(0%, yellow), color-stop(100%, white));
+    background: -webkit-linear-gradient(top left, yellow 0%, white 100%);
+    background: -o-linear-gradient(top left, yellow 0%, white 100%);
+    background: -ms-linear-gradient(top left, yellow 0%, white 100%);
+    background: linear-gradient(to bottom right, yellow 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-left', endColorstr='$bottom-right',GradientType=0 ); }
+  .linear article:nth-of-type(3) div.innerContainer div.orange {
+    background: orange;
+    background: -moz-linear-gradient(top left, orange 0%, white 100%);
+    background: -webkit-gradient(linear, top left, bottom right, color-stop(0%, orange), color-stop(100%, white));
+    background: -webkit-linear-gradient(top left, orange 0%, white 100%);
+    background: -o-linear-gradient(top left, orange 0%, white 100%);
+    background: -ms-linear-gradient(top left, orange 0%, white 100%);
+    background: linear-gradient(to bottom right, orange 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-left', endColorstr='$bottom-right',GradientType=0 ); }
+  .linear article:nth-of-type(3) div.innerContainer div.red {
+    background: red;
+    background: -moz-linear-gradient(top left, red 0%, white 100%);
+    background: -webkit-gradient(linear, top left, bottom right, color-stop(0%, red), color-stop(100%, white));
+    background: -webkit-linear-gradient(top left, red 0%, white 100%);
+    background: -o-linear-gradient(top left, red 0%, white 100%);
+    background: -ms-linear-gradient(top left, red 0%, white 100%);
+    background: linear-gradient(to bottom right, red 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top-left', endColorstr='$bottom-right',GradientType=0 ); }
+
+.radial article div.innerContainer div {
+  width: 15%;
+  height: 80%;
+  display: inline-block;
+  border-radius: 20px; }
+  .radial article div.innerContainer div.purple {
+    background: purple;
+    background: -moz-radial-gradient(center, ellipse cover, purple 0%, white 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, purple), color-stop(100%, white));
+    background: -webkit-radial-gradient(center, ellipse cover, purple 0%, white 100%);
+    background: -o-radial-gradient(center, ellipse cover, purple 0%, white 100%);
+    background: -ms-radial-gradient(center, ellipse cover, purple 0%, white 100%);
+    background: radial-gradient(ellipse at center, purple 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$center', endColorstr='$outside',GradientType=1 ); }
+  .radial article div.innerContainer div.blue {
+    background: blue;
+    background: -moz-radial-gradient(center, ellipse cover, blue 0%, white 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, blue), color-stop(100%, white));
+    background: -webkit-radial-gradient(center, ellipse cover, blue 0%, white 100%);
+    background: -o-radial-gradient(center, ellipse cover, blue 0%, white 100%);
+    background: -ms-radial-gradient(center, ellipse cover, blue 0%, white 100%);
+    background: radial-gradient(ellipse at center, blue 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$center', endColorstr='$outside',GradientType=1 ); }
+  .radial article div.innerContainer div.green {
+    background: green;
+    background: -moz-radial-gradient(center, ellipse cover, green 0%, white 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, green), color-stop(100%, white));
+    background: -webkit-radial-gradient(center, ellipse cover, green 0%, white 100%);
+    background: -o-radial-gradient(center, ellipse cover, green 0%, white 100%);
+    background: -ms-radial-gradient(center, ellipse cover, green 0%, white 100%);
+    background: radial-gradient(ellipse at center, green 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$center', endColorstr='$outside',GradientType=1 ); }
+  .radial article div.innerContainer div.yellow {
+    background: yellow;
+    background: -moz-radial-gradient(center, ellipse cover, yellow 0%, white 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, yellow), color-stop(100%, white));
+    background: -webkit-radial-gradient(center, ellipse cover, yellow 0%, white 100%);
+    background: -o-radial-gradient(center, ellipse cover, yellow 0%, white 100%);
+    background: -ms-radial-gradient(center, ellipse cover, yellow 0%, white 100%);
+    background: radial-gradient(ellipse at center, yellow 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$center', endColorstr='$outside',GradientType=1 ); }
+  .radial article div.innerContainer div.orange {
+    background: orange;
+    background: -moz-radial-gradient(center, ellipse cover, orange 0%, white 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, orange), color-stop(100%, white));
+    background: -webkit-radial-gradient(center, ellipse cover, orange 0%, white 100%);
+    background: -o-radial-gradient(center, ellipse cover, orange 0%, white 100%);
+    background: -ms-radial-gradient(center, ellipse cover, orange 0%, white 100%);
+    background: radial-gradient(ellipse at center, orange 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$center', endColorstr='$outside',GradientType=1 ); }
+  .radial article div.innerContainer div.red {
+    background: red;
+    background: -moz-radial-gradient(center, ellipse cover, red 0%, white 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, red), color-stop(100%, white));
+    background: -webkit-radial-gradient(center, ellipse cover, red 0%, white 100%);
+    background: -o-radial-gradient(center, ellipse cover, red 0%, white 100%);
+    background: -ms-radial-gradient(center, ellipse cover, red 0%, white 100%);
+    background: radial-gradient(ellipse at center, red 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$center', endColorstr='$outside',GradientType=1 ); }
+
+footer {
+  padding: 30px; }
+
+footer > ul > li {
+  list-style: none; }
+  footer > ul > li a {
+    color: #666666;
+    text-decoration: none; }
+
+@media screen and (max-width: 720px) {
+  #wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%; } }
