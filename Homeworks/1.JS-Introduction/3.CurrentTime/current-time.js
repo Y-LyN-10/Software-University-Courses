@@ -4,6 +4,14 @@
 // without leading zeroes. The minutes should be printed as two-digit number
 // with a leading zero when needed. Execute your program through Node.js.
 
-var currentTime = new Date();
-var time = currentTime.getHours() + ":" + currentTime.getMinutes();
-console.log(time);
+var currentDateTime = new Date();
+
+var hours = currentDateTime.getHours();
+var minutes = currentDateTime.getMinutes();
+
+if(minutes < 10){
+    minutes = '0' + minutes;
+}
+
+var currentTime = hours + ":" + minutes;
+console.log(currentTime);
