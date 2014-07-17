@@ -1,27 +1,28 @@
 var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
-if(!is_chrome && !is_safari){
-var is_safari = navigator.userAgent.toLowerCase().indexOf('safari') > -1;
+if (!is_chrome && !is_safari) {
+    var is_safari = navigator.userAgent.toLowerCase().indexOf('safari') > -1;
     //somehow, GeoLocation script doesn't work on my Aurora Browser, so I decided just to add this stupid check.
     alert("Plovdiv");
-    alert("Just kidding. It's okay for the homework task, but if you want to see some magic, use Chrome");
-}
-else {
+    alert("Just kidding. It's okay for the homework task, but if you want to see some magic, use Chrome. Or Safari");
+} else {
     var geocoder;
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
     }
-//Get the latitude and the longitude;
+
+    //Get the latitude and the longitude;
     function successFunction(position) {
         var lat = position.coords.latitude;
         var lng = position.coords.longitude;
 
-        var latlon = position.coords.latitude+","+position.coords.longitude;
+        var latlon = position.coords.latitude + "," + position.coords.longitude;
 
         var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
-            +latlon+"&zoom=14&size=400x300&sensor=false";
-        document.getElementById("mapHolder").innerHTML = "<img src='"+img_url+"'>";
-        codeLatLng(lat, lng)
+            + latlon + "&zoom=14&size=400x300&sensor=false";
+
+        document.getElementById("mapHolder").innerHTML = "<img src='" + img_url + "'>";
+        codeLatLng(lat, lng);
     }
 
     function errorFunction() {
@@ -33,7 +34,6 @@ else {
     }
 
     function codeLatLng(lat, lng) {
-
         var latlng = new google.maps.LatLng(lat, lng);
         geocoder.geocode({'latLng': latlng}, function (results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
