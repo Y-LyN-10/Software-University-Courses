@@ -1,7 +1,7 @@
 // Problem 1. Number Checker
 // Write a JavaScript function printNumbers(n) that accepts as parameter integer n.
-    // The function finds all integer numbers from 1 to n that are not divisible
-    // by 4 and 5 at the same time. Write a JS program numberChecker.js that invokes
+// The function finds all integer numbers from 1 to n that are not divisible
+// by 4 and 5 at the same time. Write a JS program numberChecker.js that invokes
 // your function with the sample input data below and prints the output at the console.
 
 'use strict';
@@ -22,15 +22,13 @@ var printNumbers = function (number) {
     var notDivisibleNumbers, index;
     if (number <= 1) {
         console.log('no');
-        return 'no';
-        // TODO: throw an exception
+        throw new UserException("Input should be positive number, bigger than 1");
+        return;
     } else {
         notDivisibleNumbers = getNotDivisibleNumbers(number, productNotToDivideBy(NOT_DIVISIBLE_BY));
-        for (index in notDivisibleNumbers) {
-            console.log(notDivisibleNumbers[index]);
-        }
+        console.log(notDivisibleNumbers); //This prints the result
     }
-}
+};
 
 var getNotDivisibleNumbers = function (number, productNotToDivideBy) {
     var result = [], i, j;
@@ -40,13 +38,18 @@ var getNotDivisibleNumbers = function (number, productNotToDivideBy) {
             j++;
         }
     }
-
-    return result;
+    return result.toString();
 };
 
-console.log(printNumbers(20));
+function UserException(message) {
+    this.message = message;
+    this.name = "UserException";
+}
 
 //Examples:
-//input 20	output  2, 3, 6, 7, 9, 11, 13, 14, 17, 18, 19
-//input 1	output 	no
-//input 13	output  2, 3, 6, 7, 9, 11, 13
+printNumbers(20);     //output  2, 3, 6, 7, 9, 11, 13, 14, 17, 18, 19
+//printNumbers(1);      //output  no
+//printNumbers(13);     //output  2, 3, 6, 7, 9, 11, 13
+
+// * In the task is said: "not divisible by 4 and 5 at the same time",
+//   so the output example is wrong. And the examples are not the best ones at all.
