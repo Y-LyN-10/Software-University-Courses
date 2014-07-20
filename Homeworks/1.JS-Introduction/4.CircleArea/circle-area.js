@@ -4,21 +4,18 @@
 // circle-area.js. Write a HTML page circle-area.html that includes the script circle-area.js
 // and calculates and prints in the page body the area of circles of size r=7, r=1.5 and r=20.
 
-//window.onload = function () {
+var result = document.getElementById("result");
 
-    //var result = document.getElementById("result");
+var calcCircleArea = function (r) {
+    var PI = Math.PI;
+    var radius = r;
 
-    var calcCircleArea = function(r){
-        var PI = Math.PI;
-        var radius = r;
-        return PI*(radius*radius);
-    };
+    return PI * (radius * radius);
+};
 
-    var r = [7, 1.5, 20];
-    var i;
-    for (i = 0; i < r.length; i+=1){
-        //result.innerHTML = ("r = " + (r[i]) + "; area = " + calcCircleArea(r[i]));
-        console.log(calcCircleArea(r[i]));
-    }
-//}
+/* Examples from the task:
 
+   Input(r)	Output
+   7	    153.93804002589985
+   1.5	    7.0685834705770345
+   20	    1256.6370614359173	*/
