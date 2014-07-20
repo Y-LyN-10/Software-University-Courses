@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--I know it's not a 'sea chess', but mine tic-tac-toe is really 'seasness'-->
+    <title>Sea Chess Game</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+<div id="wrapper">
+    <div id="box">
+        <div id="upperRow">
+            <canvas id="canvas1" onclick="canvasClicked(1)"></canvas>
+            <canvas id="canvas2" onclick="canvasClicked(2)"></canvas>
+            <canvas id="canvas3" onclick="canvasClicked(3)"></canvas>
+        </div>
+        <div id="middleRow">
+            <canvas id="canvas4" onclick="canvasClicked(4)"></canvas>
+            <canvas id="canvas5" onclick="canvasClicked(5)"></canvas>
+            <canvas id="canvas6" onclick="canvasClicked(6)"></canvas>
+        </div>
+        <div id="bottomRow">
+            <canvas id="canvas7" onclick="canvasClicked(7)"></canvas>
+            <canvas id="canvas8" onclick="canvasClicked(8)"></canvas>
+            <canvas id="canvas9" onclick="canvasClicked(9)">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/tic-tac-toe.js"></script>
+</div>
+</body>
+</html>      

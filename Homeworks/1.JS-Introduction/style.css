@@ -2,9 +2,12 @@ html,body, div, ul, li, span{
     margin: 0;
     padding: 0;
 }
+body{
+	background-image: url('6.Tic-Tac-Toe/imgs/sand-bgr-blurred.jpg');
+}
 #wrapper{
     margin-top: 17%;
-    height: 250px;
+    height: 290px;
     width: 100%;
     background-color: cadetblue;
 }
