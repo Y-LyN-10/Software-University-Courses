@@ -1,6 +1,5 @@
 'use strict';
 
-//Instanciate Arrays
 window.onload = function () {
     var GAME_FIELD_SQUARES_COUNT = 9;
 
@@ -63,7 +62,7 @@ window.onload = function () {
 
             if (squaresFilled === GAME_FIELD_SQUARES_COUNT) {
                 alert("You can't beat yourself? You should be very smart :}");
-                location.reload(true);
+                window.location.reload(true);
             }
         } else {
             alert("That space is already occupied.");
@@ -71,15 +70,14 @@ window.onload = function () {
     }
 
     function checkForWinners(symbol) {
-        var i, length;
-        for (i = 0, length = winningCombinations.length; i < length; i += 1) {
-            if (content[winningCombinations[i][0]] === symbol &&
-                content[winningCombinations[i][1]] === symbol &&
-                content[winningCombinations[i][2]] === symbol) {
+        winningCombinations.forEach(function(combination){
+            if (content[combination[0]] === symbol &&
+                content[combination[1]] === symbol &&
+                content[combination[2]] === symbol) {
                 alert(symbol + " won!");
                 window.location.reload(true);
             }
-        }
+        });
     }
 };
 
