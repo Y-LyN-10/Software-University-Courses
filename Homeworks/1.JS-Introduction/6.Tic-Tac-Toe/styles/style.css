@@ -11,7 +11,7 @@ body {
     border: 1px dotted #BFAE82;
     background-image: url('../imgs/sand-bgr-tic-tac-toe.jpg');
 }
-#box{
+#gameField{
     margin-left: 20px;
     margin-top: 45px;
 }
