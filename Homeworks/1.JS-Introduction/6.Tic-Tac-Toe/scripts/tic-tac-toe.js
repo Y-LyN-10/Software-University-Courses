@@ -1,6 +1,6 @@
-'use strict';
-
 window.onload = function () {
+    'use strict';
+
     var GAME_FIELD_SQUARES_COUNT = 9;
 
     var painted = [],
@@ -24,13 +24,6 @@ window.onload = function () {
         painted[i] = false;
         content[i] = '';
     }
-
-    [].slice.call(document.querySelectorAll("canvas")).forEach(function(field){
-        field.addEventListener('click', function (event) {
-            targetID = event.target.id;
-            canvasClicked(targetID);
-        });
-    });
 
     function canvasClicked(targetID) {
         var canvas = document.getElementById(targetID),
@@ -79,6 +72,13 @@ window.onload = function () {
             }
         });
     }
+
+    [].slice.call(document.querySelectorAll("canvas")).forEach(function(field){
+        field.addEventListener('click', function (event) {
+            targetID = event.target.id;
+            canvasClicked(targetID);
+        });
+    });
 };
 
 /* Additional ideas what TODO (ever-never):
@@ -87,6 +87,6 @@ window.onload = function () {
     - drawing symbols with sprites
     - 'clear' the game with a sea wave animation (carefully with the wet sand reproduction)
     - add scores and counters maybe (it's not so interesting thing)
-    - add animations for footsteps in the sand and other surprizes :D
+    - add animations for footsteps in the sand and other surprises :D
     - well, enough xD
 */
