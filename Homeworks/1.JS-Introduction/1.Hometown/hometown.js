@@ -3,7 +3,7 @@
  Crate a HTML page hometown.html that executes your JavaScript code. */
 
 var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
-if (!is_chrome && !is_safari) {
+if (!is_chrome) {
     var is_safari = navigator.userAgent.toLowerCase().indexOf('safari') > -1;
     //somehow, GeoLocation script doesn't work on my Aurora Browser, so I decided just to add this stupid check.
     alert("Plovdiv");
