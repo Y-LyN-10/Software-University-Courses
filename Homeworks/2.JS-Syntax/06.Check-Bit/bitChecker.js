@@ -1,19 +1,33 @@
 (function () {
     'use strict';
 
-    function checkThirdBitIsOne(number){
+    function isThirdBitOne(number){
+        var mask, numberAndMask, bit;
 
-        //TODO... write the program logic
+        mask = 1 << 3;
+        numberAndMask = number & mask;
+        bit = numberAndMask >> 3;
 
-        return false;
+        return bit ? true : false;
     }
 
-    //Get a random integer number from 0 to 1000, using chance.js library to test the program
-    var randomNumber, testResult, i;
-    for(i = 0; i < 5; i+=1){
-        randomNumber = chance.integer({min: 0, max: 1000});
-        testResult = checkThirdBitIsOne(randomNumber);
+    //Array with test examples from the task
+    var testNumbers = [333, 425, 2567564754, 3, 0, 7],
+        checked, result, rn, i, j;
 
-        console.log(randomNumber + ' -> is the third bit 1? -> ' + testResult);
+    //And some randoms to the array...
+    for (i = 0; i < 5; i += 1) {
+        rn = chance.integer({min: 0, max: 5000});
+        testNumbers.push(rn);
+    }
+
+    //And test
+    for (j = 0; j < testNumbers.length; j += 1) {
+        checked = isThirdBitOne(testNumbers[j]);
+        result = {
+            number: testNumbers[j],
+            isThirdBitOne: checked
+        };
+        console.log(result);
     }
 }());
