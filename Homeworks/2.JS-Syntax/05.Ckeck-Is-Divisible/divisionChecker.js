@@ -2,15 +2,9 @@
     'use strict';
 
     function divisibleByThree(number) {
-        var isDivisible, sum = 0;
-
-        number.toString()
-              .split('') // in the number is negative, there remains an element with char '-'
-              .filter(function (char){return char !== '-';})
-              .forEach(function (digit){sum += parseInt(digit);});
-
-        isDivisible = sum % 3 === 0;
-        return isDivisible;
+        //If the number is divisible by three,
+        //the sum of it's digits are also divisible by 3
+        return number % 3 === 0;
     }
 
     //Array with test examples from the task

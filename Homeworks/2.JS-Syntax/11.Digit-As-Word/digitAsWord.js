@@ -1,18 +1,15 @@
 (function () {
     'use strict';
 
-    function onvertDigitToWord(floatNumber){
+    function onvertDigitToWord(digit){
 
-        //TODO... write the program logic
-
-        return '';
+      return;
     }
 
-    //Get a random floating value from 0 to 10, using chance.js library to test the program
-    var randomNumber, digitAsWord, i;
+    var randomDigit, digitAsWord, i;
     for(i = 0; i < 5; i+=1){
-        randomNumber= chance.integer({min: 0, max: 10});
-        digitAsWord = onvertDigitToWord(randomNumber);
+        randomDigit= chance.integer({min: 0, max: 10});
+        digitAsWord = onvertDigitToWord(randomDigit);
 
         console.log(randomNumber + ' -> ' + digitAsWord);
     }

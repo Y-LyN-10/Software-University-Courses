@@ -1,13 +1,10 @@
 (function () {
     'use strict';
 
-    function checkVariableType(floatNumber){
+    function checkVariableType(variable){
 
-        //TODO... write the program logic
-
-        return '';
+        return;
     }
 
-    //TODO:... generate object with name, years, gender(isMale) + array of foods
     checkVariableType();
 }());

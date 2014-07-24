@@ -17,7 +17,7 @@
 
     //And some randoms to the array...
     for (i = 0; i < 5; i += 1) {
-        rn = chance.integer({min: 0, max: 5000});
+        rn = chance.integer({min: 0, max: 1000});
         testNumbers.push(rn);
     }
 
@@ -28,6 +28,7 @@
             number: testNumbers[j],
             isThirdBitOne: checked
         };
+
         console.log(result);
     }
 }());
