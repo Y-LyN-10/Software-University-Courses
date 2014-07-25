@@ -8,7 +8,7 @@
         b = values[1];
 
         //simplified formula of square area + triangle area
-        houseArea = (4*(a*a)) / 3;
+        houseArea = (4*(a*a)) / 3; //Thanks to SuperVlado™
         treeArea =  Math.PI*(2/3*b)*(2/3*b) + b * (b / 3);
 
         return houseArea > treeArea ? 'house/' + houseArea.toFixed(2) : 'tree/' + treeArea.toFixed(2);

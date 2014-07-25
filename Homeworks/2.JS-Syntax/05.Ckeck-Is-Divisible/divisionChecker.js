@@ -3,7 +3,7 @@
 
     function divisibleByThree(number) {
         //If the number is divisible by three,
-        //the sum of it's digits are also divisible by 3
+        //the sum of it's digits is also divisible by 3
         return number % 3 === 0;
     }
 
