@@ -47,7 +47,7 @@ function UserException(message) {
 }
 
 //Examples:
-printNumbers(20);     //output  2, 3, 6, 7, 9, 11, 13, 14, 17, 18, 19
+//printNumbers(20);     //output  2, 3, 6, 7, 9, 11, 13, 14, 17, 18, 19
 //printNumbers(1);      //output  no
 //printNumbers(13);     //output  2, 3, 6, 7, 9, 11, 13
 

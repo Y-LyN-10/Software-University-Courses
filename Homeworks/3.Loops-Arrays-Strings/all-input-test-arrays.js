@@ -81,8 +81,7 @@ var cards = [
 var htmlCodes = [
     "<p>Hello</p><a href='http://w3c.org'>W3C</a>",
     "<ul>\n<li>\n<a href=http://softuni.bg>SoftUni</a>\n</li>\n</ul>",
-        "We are <mixcase>living</mixcase> in a <upcase>yellow submarine</upcase>. " +
-        "We <mixcase>don't</mixcase> have <lowcase>anything</lowcase> else."
+    "We are <mixcase>living</mixcase> in a <upcase>yellow submarine</upcase>. " +
+    "We <mixcase>don't</mixcase> have <lowcase>anything</lowcase> else."
 ];
 
-console.log(findMinAndMax(exampleArrayWithNumbers[0]));

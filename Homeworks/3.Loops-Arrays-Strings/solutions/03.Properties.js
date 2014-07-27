@@ -3,14 +3,13 @@
     of the "document" object in alphabetical order. Write a JS program docProperties.js that
     invokes your function with the sample input data below and prints the output at the console. */
 
-/*
+function displayProperties(value){
 
-Example output: Output
+}
 
-activeElement
-alinkColor
-all
-…
-xmlVersion
-
-*/
+displayProperties(value);
+var value = [
+    'activeElement',
+    'alinkColor',
+    'all',
+    'xmlVersion'];
