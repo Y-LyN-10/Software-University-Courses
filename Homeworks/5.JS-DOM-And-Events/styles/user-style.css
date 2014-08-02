@@ -1,0 +1,41 @@
+.under-nav{
+    margin-top: 50px;
+}
+#like-btn{
+    margin: 10px;
+}
+
+.list-group{
+    padding: 0;
+}
+
+.list-group li{
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.list-group li:hover{
+    background-color: #222222;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+strong, span{
+    font-size: 1.3em;
+}
+
+.jumbotron{
+    border-bottom: 10px solid #222222;
+}
+
+.special-border{
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+
+}
