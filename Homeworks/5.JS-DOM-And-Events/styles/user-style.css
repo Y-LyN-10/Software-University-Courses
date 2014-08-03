@@ -1,41 +1,46 @@
-.under-nav{
+.under-nav {
     margin-top: 50px;
 }
-#like-btn{
+
+#like-btn {
     margin: 10px;
 }
 
-.list-group{
+.list-group {
     padding: 0;
 }
 
-.list-group li{
-    cursor: pointer;
+.list-group li {
     padding-left: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.list-group li:hover{
+.list-group li:hover {
     background-color: #222222;
     color: #ffffff;
 }
 
-a {
-    text-decoration: none;
-    color: #000000;
-}
-
-strong, span{
+strong, span {
     font-size: 1.3em;
 }
 
-.jumbotron{
+.jumbotron {
     border-bottom: 10px solid #222222;
 }
+.odd-even-divs-block{
+    min-height: 150px;
+    margin-bottom: 20px;
+}
 
-.special-border{
-    border-right: 1px solid #dddddd;
-    border-left: 1px solid #dddddd;
+#button-row .btn {
+    margin-bottom: 20px;
+}
 
+#problem-two {
+    min-height: 150px;
+}
+
+#onlyNumbers {
+    margin-bottom: 10px;
 }
