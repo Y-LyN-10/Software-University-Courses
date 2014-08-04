@@ -6,14 +6,18 @@
         rows = document.querySelectorAll('tr');
 
         if (hideShowButton.innerHTML === 'Hide Odd Rows') {
-            hideRow(0); hideRow(2); hideRow(4);
+            hideRow(0);
+            hideRow(2);
+            hideRow(4);
 
             hideShowButton.classList.remove('btn-success');
             hideShowButton.classList.add('btn-danger');
             hideShowButton.innerHTML = 'Show Odd Rows';
 
         } else {
-            showRow(0); showRow(2); showRow(4);
+            showRow(0);
+            showRow(2);
+            showRow(4);
 
             hideShowButton.classList.remove('btn-danger');
             hideShowButton.classList.add('btn-success');

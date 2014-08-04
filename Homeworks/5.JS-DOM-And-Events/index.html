@@ -14,8 +14,8 @@
                 <h3 class="text-success">Working with DOM & Events</h3>
             </div>
             <div class="col-xs-2">
-                <input class="btn btn-success pull-right"
-                       id="like-btn" type="button" value="Like"/>
+                <input class="btn pull-right"
+                       id="like-btn" type="button" value="Like Me!"/>
             </div>
         </div>
     </div>
@@ -23,24 +23,24 @@
 <div class="jumbotron under-nav">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="text-center text-success">
                     On this page you can see the result of all tasks, given in the homework.
                     <br/><br/>
                     <p>Thank you for your attention</p>
                 </div>
-                <div class="label-success label center-block">
-                    <p></p>
+                <div class="label-success label center-block" id="problem-five">
                     <strong>Mouse Coordinates: </strong>
                     <span>X: </span>
                     <span id="x"></span>
                     <span>Y: </span>
                     <span id="y"></span>
                     <p></p>
+                    <span id="dateTime"></span>
                 </div>
             </div>
             <div class="col-md-1"></div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <ul class="list-group list-unstyled list-group-item">
                     <li>Problem 1. Like / Unlike Button</li>
                     <li>Problem 2. Display DIVs Content</li>
@@ -65,13 +65,15 @@
                 <tr><td>row 5</td></tr>
             </table>
         </div>
-        <div class="col-sm-4" id="problem-two">
+        <div class="col-sm-4">
             <button id="btnInnerDivs" class="btn btn-success">Display DIVs Content</button>
-            <div>first div</div>
-            <div>second div</div>
-            <div class="empty"></div>
-            <div>third div<div>inner div</div></div>
-            <ul id="result"></ul>
+            <div id="problem-two">
+                <div>first div</div>
+                <div>second div</div>
+                <div class="empty"></div>
+                <div>third div<div>inner div</div></div>
+                <ul id="result" class="list-group-item-success"></ul>
+            </div>
         </div>
         <div class="col-sm-3">
             <div class="form-group" id="input-block">
