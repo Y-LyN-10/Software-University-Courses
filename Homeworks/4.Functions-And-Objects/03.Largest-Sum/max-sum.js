@@ -9,7 +9,7 @@
             return undefined;
         }
 
-        numbers.forEach(function(number){
+        numbers.forEach(function (number) {
             currentSum = 0;
 
             if (parseInt(number) !== number) {
@@ -19,11 +19,11 @@
             currentNum = Math.abs(number).toString();
             currentNumDigits = currentNum.split('');
 
-            if(currentNumDigits.length < 2){
+            if (currentNumDigits.length < 2) {
                 return undefined;
             }
 
-            currentNumDigits.forEach(function(digit){
+            currentNumDigits.forEach(function (digit) {
                 currentSum += Number(digit);
 
                 if (currentSum >= maxSum) {
@@ -45,7 +45,7 @@
         checked, j, currentNumDigits,
         currentSum, currentNum;
 
-    for(j = 0; j < testNumbers.length; j+=1){
+    for (j = 0; j < testNumbers.length; j += 1) {
         checked = findNumberWithMaxDigitSum(testNumbers[j]);
         console.log(checked);
     }

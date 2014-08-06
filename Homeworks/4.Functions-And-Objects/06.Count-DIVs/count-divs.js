@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    function countDivs(){
+    function countDivs() {
         return document.querySelectorAll('div').length;
     }
 

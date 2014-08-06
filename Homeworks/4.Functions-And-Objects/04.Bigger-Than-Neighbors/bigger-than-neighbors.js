@@ -7,7 +7,7 @@
         } else if (index > numbers.length - 1) {
             return 'invalid index';
         } else if (numbers[index - 1] < numbers[index]
-                && numbers[index] > numbers[index + 1]) {
+            && numbers[index] > numbers[index + 1]) {
             return 'bigger'
         } else {
             return 'not bigger';

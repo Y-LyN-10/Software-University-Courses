@@ -19,16 +19,16 @@
     }
 
     var testStrings = [
-        'Hello, how are you.',
-        'Life is pretty good, isn’t it?',
-        'I really love JavaScript!',
-        'Look at this amazing library - chance!',
-        chance.sentence({words: 6}),
-        chance.paragraph({sentences: 2})
-    ],
+            'Hello, how are you.',
+            'Life is pretty good, isn’t it?',
+            'I really love JavaScript!',
+            'Look at this amazing library - chance!',
+            chance.sentence({words: 6}),
+            chance.paragraph({sentences: 2})
+        ],
         reversed, result;
 
-    testStrings.forEach(function(string){
+    testStrings.forEach(function (string) {
         reversed = reverseWords(string);
 
         result = {

@@ -1,19 +1,19 @@
 (function () {
     'use strict';
 
-    function findNthDigit (testValues) {
+    function findNthDigit(testValues) {
         digit = testValues[0];
         number = testValues[1];
 
         var numberAsString = number.toString().replace('.', '').replace('-', '');
 
         try {
-            if(numberAsString.length < digit) {
+            if (numberAsString.length < digit) {
                 throw new Error('The number ' + number + ' doesn’t have ' + digit + ' digits');
             } else {
                 return numberAsString[numberAsString.length - digit];
             }
-        } catch(err){
+        } catch (err) {
             console.log(err);
         }
     }
@@ -46,7 +46,7 @@
     for (j = 0; j < testValues.length; j += 1) {
         nthDigit = findNthDigit(testValues[j]);
 
-        if(nthDigit !== undefined){
+        if (nthDigit !== undefined) {
             result = {
                 digit: testValues[j][0],
                 number: testValues[j][1],

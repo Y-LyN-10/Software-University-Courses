@@ -8,7 +8,7 @@
         return lastDigit;
     }
 
-    function convertDigitToWord(digit){
+    function convertDigitToWord(digit) {
 
         var digitsAsWords = [
             'Zero', 'One', 'Two', 'Three', 'Four',
@@ -19,8 +19,8 @@
     }
 
     var randomNumber, digit, lastDigit, word, result, i;
-    for(i = 0; i < 5; i+=1){
-        randomNumber= chance.integer({min: -1000, max: 20000});
+    for (i = 0; i < 5; i += 1) {
+        randomNumber = chance.integer({min: -1000, max: 20000});
         digit = findLastDigit(randomNumber);
         word = convertDigitToWord(digit);
         result = {

@@ -3,10 +3,10 @@
 
     Array.prototype.removeItem = function (item) {
         var i;
-        for (i = 0; i < this.length; i+=1) {
+        for (i = 0; i < this.length; i += 1) {
             if (this[i] === item) {
                 this.splice(i, 1);
-                i-=1; // Because if the items are repeating, they've got skipped
+                i -= 1; // Because if the items are repeating, they've got skipped
             }
         }
     };
