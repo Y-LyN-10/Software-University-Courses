@@ -7,37 +7,47 @@
 (function () {
     'use strict';
 
+    var mixedArray, maxSequence, resultTiPrint;
+
     function findMaxSequence(numbers) {
         var currentSequence = 1,
             longestSequence = 1,
-            maxSeqNum = numbers[0];
+            sequenceItem = numbers[0],
+            result = [];
 
-
-        numbers.forEach(function (number, i, numbers) {
-            if (numbers[i - 1] === number) {
+        numbers.forEach(function (n, i, numbers) {
+            // 'n' is the same as 'numbers[i]'
+            if (numbers[i - 1] === numbers[i]) {
                 currentSequence++;
                 if (currentSequence >= longestSequence) {
                     longestSequence = currentSequence;
-                    maxSeqNum = numbers[i];
+                    sequenceItem = numbers[i];
                 }
-            }
-            else {
+            } else {
                 currentSequence = 1;
             }
         });
 
-// create arr with the results
-        var result = [];
-        for (var i = 0; i < longestSequence; i++) {
-            result.push(maxSeqNum);
+        while (longestSequence--) {
+            result.push(sequenceItem);
         }
+
+        return result;
     }
 
+    mixedArray = [
+        [2, 1, 1, 2, 3, 3, 2, 2, 2, 1], ['happy'],
+        [2, 'qwe', 'qwe', 3, 3, '3'],
+        [5, 4, 3, 3, '3', 3, 'test', 'test', 'test', 0, '0', '0', 0]
+    ];
 
+    mixedArray.forEach(function (array) {
+        maxSequence = findMaxSequence(array);
+        resultTiPrint = {
+            array: array,
+            maxSequence: maxSequence
+        };
+
+        console.log(resultTiPrint);
+    });
 }());
-/*
- Input	                          Output
- [2, 1, 1, 2, 3, 3, 2, 2, 2, 1]	  [2, 2, 2]
- ['happy']	                      ['happy']
- [2, 'qwe', 'qwe', 3, 3, '3']	  [3, 3]
- */

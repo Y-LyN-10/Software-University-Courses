@@ -1,8 +1,8 @@
 /* Problem 1. Number Checker
-   Write a JavaScript function printNumbers(n) that accepts as parameter integer
-   n. The function finds all integer numbers from 1 to n that are not divisible
-   by 4 or by 5. Write a JS program numberChecker.js that invokes your function
-   with the sample input data below and prints the output at the console.  */
+ Write a JavaScript function printNumbers(n) that accepts as parameter integer
+ n. The function finds all integer numbers from 1 to n that are not divisible
+ by 4 or by 5. Write a JS program numberChecker.js that invokes your function
+ with the sample input data below and prints the output at the console.  */
 (function () {
     'use strict';
 
@@ -54,8 +54,3 @@
         }
     })
 }());
-
-//Examples:
-//printNumbers(20);     //output  2, 3, 6, 7, 9, 11, 13, 14, 17, 18, 19
-//printNumbers(1);      //output  no
-//printNumbers(13);     //output  2, 3, 6, 7, 9, 11, 13
