@@ -15,7 +15,7 @@
 
         i = firstArr.length;
 
-        if (a !== secondArr.length) return 'Not Equal';
+        if (i !== secondArr.length) return 'Not Equal';
         while (i--) {
             if (firstArr[i] !== secondArr[i]) return 'Not Equal';
         }
