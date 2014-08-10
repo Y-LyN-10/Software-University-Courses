@@ -2,20 +2,32 @@
     'use strict';
 
     function reverseWords(string) {
-        var words, reversedWord,
-            output = [], i;
+        var words;
+//        var reversedWord,
+//            output = [], i;
+//        words = string.split(' ')
+//            .filter(Boolean)
+//            .forEach(function (word) {
+//                reversedWord = [];
+//                for (i = 0; i < word.length; i += 1) {
+//                    reversedWord[i] = word[word.length - 1 - i];
+//                }
+//                output.push(reversedWord.join(''));
+//            });
+//
+//        return output.join(' ');
 
-        words = string.split(' ')
-            .filter(Boolean)
-            .forEach(function (word) {
-                reversedWord = [];
-                for (i = 0; i < word.length; i += 1) {
-                    reversedWord[i] = word[word.length - 1 - i];
-                }
-                output.push(reversedWord.join(''));
-            });
+        // I found much better solution!
 
-        return output.join(' ');
+        words = string
+            .split("")
+            .reverse()
+            .join("")
+            .split(" ")
+            .reverse()
+            .join(" ");
+
+        return words;
     }
 
     var testStrings = [
