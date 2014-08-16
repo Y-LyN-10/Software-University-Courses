@@ -14,9 +14,7 @@ function solve(args) {
 
     args.slice(1).forEach(function (line) {
         line.split('').forEach(function (ch) {
-            ch = ch.toLowerCase().replace(' ', '')
-				 .replace(/(\r\n|\n|\r)/gm,'')
-				 .replace(/\s+/g,'');
+            ch = ch.toLowerCase().replace(' ', '');
 
             if (alphabet.indexOf(ch) >= 0) {
                 letters += (alphabet.indexOf(ch) + 1) * 10;
