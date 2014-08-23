@@ -1,9 +1,15 @@
 table, th, td, tr{
+	margin-top: 10px;
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
     background-color: #fff8fd;
 }
-tr:hover{
-    background-color: #e5d4fa;
+#result{
+	margin-top: 20px;
+	max-width: 600px;
+	color: gray;
+}
+#result strong{
+	color: black;
 }
