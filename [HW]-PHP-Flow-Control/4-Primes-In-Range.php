@@ -20,7 +20,7 @@
 		<input type="submit" value="Show Primes"/>
 	</form>		
 	<div id="result">
-		<?php echo print_primes() ?>
+		<?php echo print_primes(); ?>
 	</div>
 </body>
 </html>
