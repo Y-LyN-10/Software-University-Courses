@@ -23,22 +23,32 @@
 		<input type="radio" name="function" value="check_palindrome" id="check_palindrome" checked/>
 		<label for="check_palindrome">Check Palindrome</label>
 
-		<input type="radio" name="function" value="reverse" id="reverse"/>
+		<input type="radio" name="function" value="reverse_string" id="reverse"/>
 		<label for="reverse">Reverse String</label>
 
-		<input type="radio" name="function" value="split" id="split"/>
+		<input type="radio" name="function" value="split_string" id="split_string"/>
 		<label for="split">Split</label>
 
-		<input type="radio" name="function" value="hash" id="hash"/>
+		<input type="radio" name="function" value="hash_string" id="hash_string"/>
 		<label for="hash">Hash String</label>
 
-		<input type="radio" name="function" value="shuffle" id="shuffle"/>
+		<input type="radio" name="function" value="shuffle_string" id="shuffle_string"/>
 		<label for="shuffle">Shuffle String</label>
 
 		<input type="submit" value="Submit"/>
 	</form>
 	<div id="result">
-		<?php echo modify_string(); ?>
+	<?php
+	$input_string = htmlentities($_POST["string"]);
+	if (isset($input_string) && isset($_POST["function"]) && !empty($input_string)) {
+		$allowedFunctions = array("check_palindrome", "reverse_string", "split_string", "hash_string", "shuffle_string");
+		if (in_array($_POST["function"], $allowedFunctions)) {
+			echo $_POST["function"]($input_string);
+		} else {
+			echo "<div>Invalid function selected.</div>";
+		}
+	}
+	?>
 	</div>
 </body>
 </html>
@@ -51,27 +61,21 @@
 //
 // ------------------------------------------------------------------
 
-function modify_string() {
-	$input_string = htmlentities($_POST["string"]);
-	$chosen_function = htmlentities($_POST["function"]);
-	return $chosen_function($input_string);
-}
-
 function check_palindrome($string) {
-	$normalizedString = strtolower(preg_replace("/[^A-Za-z0-9]/", "", $string));
-	return "$string is " . ($normalizedString == strrev($normalizedString) ? "" : "not ") . "a palindrome!";
+	$normalized_string = strtolower(preg_replace("/[^A-Za-z0-9]/", "", $string));
+	return "$string is " . ($normalized_string == strrev($normalized_string) ? "" : "not ") . "a palindrome!";
 }
 
-function reverse($string) { return strrev($string); }
+function reverse_string($string) { return strrev($string); }
 
-function split($string) {
+function split_string($string) {
 	$result = array();
 	preg_match_all('/[A-Za-z]/', $string, $result);
 	return implode(" ", $result[0]);
 }
 
-function hash($string) { return crypt($string); }
+function hash_string($string) { return crypt($string); }
 
-function shuffle($string) { return str_shuffle($string); }
+function shuffle_string($string) { return str_shuffle($string); }
 
 ?>
