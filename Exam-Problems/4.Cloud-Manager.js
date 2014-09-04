@@ -29,7 +29,7 @@
             }
         }
 
-        // Print the concertInfo as JSON string
+        // Print the cloudManager as JSON string
         console.log(JSON.stringify(cloudManager));
 
         function sortObjectProperties(obj) {
