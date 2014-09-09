@@ -1,6 +1,6 @@
 ## Homework: Introduction to Java
 
-This document defines homework assignments from the “Java Basics“ Course @ Software University. 
+###### This document defines homework assignments from the “Java Basics“ Course @ Software University. 
 ------------------------------------------
 
 #### Problem 1. Play with Eclipse
@@ -14,9 +14,9 @@ Create a simple Java program PrintHometown.java (console application) to print t
 
 #### Problem 4.	Play with the Java API Documentation
 Play with Java API Documentation. You may find it online at http://docs.oracle.com/javase/8/docs/api/.
-* •	Find information about System.out.println method.
-* •	Find information about the LocalDateTime class.
-* •	Find information about the java.util.Scanner class.
+* Find information about System.out.println method.
+* Find information about the LocalDateTime class.
+* Find information about the java.util.Scanner class.
 You do not have to submit anything in your homework for this problem.
 
 #### Problem 5.	Print the Current Date and Time
@@ -25,7 +25,7 @@ Create a simple Java program CurrentDateTime.java to print the current date and 
 #### Problem 6.	Sum Two Numbers
 Write a program SumTwoNumbers.java that enters two integers from the console, calculates and prints their sum. Search in Internet to learn how to read numbers from the console. Examples:
   a  |  b  |  result  
-----------------------
+:--------------------:
   5  |  2  |    8     
   12 |  7  |    5     
 
@@ -34,19 +34,19 @@ Using javac compile from the console the program SumTwoNumbers.java. Execute at 
 
 #### Problem 8.	* Sort Array of Strings
 Write a program that enters from the console number n and n strings, then sorts them alphabetically and prints them. Note: you might need to learn how to use loops and arrays in Java (search in Internet). Examples:
-|  Input  |  Output  |
-|:-------------------|
-| 5       |  Bourgas |
-| Sofia   |  Pleven  |
-| Plovdiv |  Plovdiv |
-| Varna   |  Sofia   |
-| Pleven  |  Varna   |
-| Bourgas |			 |
+   Input  |  Output  
+:-------------------
+  5       |  Bourgas 
+  Sofia   |  Pleven  
+  Plovdiv |  Plovdiv 
+  Varna   |  Sofia   
+  Pleven  |  Varna   
+  Bourgas | 
 
 #### Problem 9.	*** Generate a PDF by External Library
 Write a program to generate a PDF document called Deck-of-Cards.pdf and print in it a standard deck of 52 cards, following one after another. Each card should be a rectangle holding its face and suit. A few examples are shown below:
- A ♠ | 2 ♥ | Q ♦ | K ♣ | J ♦ | 9 ♦ | 7 ♠
- ----|-----|-----|-----|-----|-----|-----
+ A ♠ | 2 ♥ | Q ♦ | K ♣ | J ♦ | 9 ♦ | 7 ♠ |
+ <br>
 You are free to choose the size of each card, the spacing between the cards, how many cards to put in each line, etc. 
 Note: you will need to use an external Java library for creating PDF documents. Find some in Internet. Put your JAR files in a folder called "lib" (this is a standard approach in Java projects) and reference them in the build path.
 Hint: solve the problem step by step:
