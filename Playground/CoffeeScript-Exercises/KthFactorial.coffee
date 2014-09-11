@@ -1,14 +1,23 @@
-# Assignments
-value = 1
+math = require './math.js'
 
-# Arrays
-factorials = [0, 1]
+# Config
+math.config
+  number: 'bignumber'
+  precision: 500
+
+# Assignments
+factorial = 1
 
 # Functions:
 kth_factorial = (k, n) ->
-  for i in [2...n+1]
-    value = value * i
-    factorials.push(value)
-  return factorials[k]
+  try throw new Error if n < 0 || k < 0
+  catch ex then return 'n and k should be positive numbers'
 
-console.log kth_factorial(5,5)
+  for i in [1...n+1]
+    factorial = math.select(math.bignumber(factorial))
+                    .multiply(i)
+                    .done()
+
+  return math.pow(factorial, k)
+
+console.log math.format(kth_factorial(-5,30))
