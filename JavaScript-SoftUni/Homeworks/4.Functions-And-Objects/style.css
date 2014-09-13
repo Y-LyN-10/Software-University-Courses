@@ -1,0 +1,52 @@
+html, body, div, ul, li, span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #414e58;
+}
+
+#wrapper {
+    margin-top: 5%;
+    height: 480px;
+    width: 100%;
+    background-color: #94d0dd;
+}
+
+ul, li {
+    list-style: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+h1 {
+    font-family: "Keep Calm", Serif, Georgia, Helvetica;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 5px;
+    padding-right: 20px;
+    width: 100% -10px;
+    background-color: #f5e8ad;
+}
+
+h3 {
+    font-family: Helvetica;
+    display: inline;
+    margin-left: 50px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+
+li:hover {
+    background-color: #f5e8ad;
+}
+
+.undone {
+    text-decoration: line-through;
+    cursor: default;
+}

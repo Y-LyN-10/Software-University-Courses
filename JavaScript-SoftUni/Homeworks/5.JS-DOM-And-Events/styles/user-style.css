@@ -1,0 +1,61 @@
+.under-nav {
+    margin-top: 50px;
+}
+
+#like-btn {
+    margin: 10px;
+}
+
+.list-group {
+    padding: 0;
+}
+
+.list-group li {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.list-group li:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+strong, span {
+    font-size: 1.3em;
+}
+
+.jumbotron {
+    border-bottom: 10px solid #222222;
+}
+.odd-even-divs-block{
+    min-height: 150px;
+    margin-bottom: 20px;
+}
+
+#button-row .btn {
+    margin-bottom: 20px;
+}
+
+#problem-two {
+    min-height: 180px;
+    background-color: #eeeeee;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+#result{
+    margin-left: -10px;
+}
+
+#onlyNumbers {
+    margin-bottom: 10px;
+}
+
+#dateTime{
+    font-weight: 100;
+}
+
+#problem-five{
+    padding: 10px;
+}

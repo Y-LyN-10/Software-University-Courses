@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../imgs/sand-bgr.jpg');
+}
+#wrapper{
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 1px dotted #BFAE82;
+    background-image: url('../imgs/sand-bgr-tic-tac-toe.jpg');
+}
+#gameField{
+    margin-left: 20px;
+    margin-top: 45px;
+}
+#upperRow{
+    margin-left: 30px;
+}
+#middleRow{
+    margin-left: 60px;
+}
+#bottomRow{
+    margin-left: 90px;
+}
+canvas{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}

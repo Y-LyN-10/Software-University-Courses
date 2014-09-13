@@ -1,0 +1,37 @@
+html,body, div, ul, li, span{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    margin-top: 2%;
+    height: 530px;
+    width: 100%;
+    background-color: #8cae83;
+}
+ul, li{
+    list-style: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+h1{
+    font-family: "Keep Calm", Serif, Georgia, Helvetica;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 5px;
+    padding-right: 20px;
+    width: 100% - 10px;
+    background-color: #c7f5bc;
+}
+h3{
+    font-family: Helvetica;
+    display: inline;
+    margin-left: 50px;
+}
+a{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+li:hover{
+    background-color: #FFFFFF;
+}

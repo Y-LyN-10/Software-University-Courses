@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/bootstrap.css"/>
+    <link rel="stylesheet" href="styles/user-style.css"/>
+    <title>JS-Homework - Working with DOM</title>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top navbar-right">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-10">
+                <h3 class="text-success">Working with DOM & Events</h3>
+            </div>
+            <div class="col-xs-2">
+                <input class="btn pull-right"
+                       id="like-btn" type="button" value="Like Me!"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="jumbotron under-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="text-center text-success">
+                    On this page you can see the result of all tasks, given in the homework.
+                    <br/><br/>
+                    <p>Thank you for your attention</p>
+                </div>
+                <div class="label-success label center-block" id="problem-five">
+                    <strong>Mouse Coordinates: </strong>
+                    <span>X: </span>
+                    <span id="x"></span>
+                    <span>Y: </span>
+                    <span id="y"></span>
+                    <p></p>
+                    <span id="dateTime"></span>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <ul class="list-group list-unstyled list-group-item">
+                    <li>Problem 1. Like / Unlike Button</li>
+                    <li>Problem 2. Display DIVs Content</li>
+                    <li>Problem 3. Hide Odd Rows</li>
+                    <li>Problem 4. Numbers Only Field</li>
+                    <li>Problem 5. Print Mouse Coordinates</li>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row" id="button-row">
+        <div class="col-sm-5">
+            <button id="btnOddRows" class="btn btn-success">Hide Odd Rows</button>
+            <table class="table">
+                <tr><td>row 1</td></tr>
+                <tr><td>row 2</td></tr>
+                <tr><td>row 3</td></tr>
+                <tr><td>row 4</td></tr>
+                <tr><td>row 5</td></tr>
+            </table>
+        </div>
+        <div class="col-sm-4">
+            <button id="btnInnerDivs" class="btn btn-success">Display DIVs Content</button>
+            <div id="problem-two">
+                <div>first div</div>
+                <div>second div</div>
+                <div class="empty"></div>
+                <div>third div<div>inner div</div></div>
+                <ul id="result" class="list-group-item-success"></ul>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group" id="input-block">
+                <input type="text" class="form-control" id="onlyNumbers">
+            </div>
+            <pre>Using JavaScript, this form accepts only numbers. When a non-number character is entered, the field gets red for a while and do not accept the change (preserve the previous value of the field).</pre>
+        </div>
+    </div>
+</div>
+<script src="scripts/1.LikeBtn.js" type="text/javascript"></script>
+<script src="scripts/2.DisplayDIVs.js" type="text/javascript"></script>
+<script src="scripts/3.HideOddRows.js" type="text/javascript"></script>
+<script src="scripts/4.ValidateInput.js" type="text/javascript"></script>
+<script src="scripts/5.MouseCoordinates.js" type="text/javascript"></script>
+</body>
+</html>

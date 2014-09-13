@@ -1,0 +1,43 @@
+html,body, div, ul, li, span{
+    margin: 0;
+    padding: 0;
+}
+body{
+	background-image: url('6.Tic-Tac-Toe/imgs/sand-bgr-blurred.jpg');
+}
+#wrapper{
+    margin-top: 17%;
+    height: 290px;
+    width: 100%;
+    background-color: cadetblue;
+}
+ul, li{
+    list-style: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+h1{
+    font-family: "Keep Calm", Serif, Georgia, Helvetica;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 5px;
+    padding-right: 20px;
+    width: 100% - 10px;
+    background: lightblue;
+}
+h3{
+    font-family: Helvetica;
+    display: inline;
+    margin-left: 50px;
+}
+span{
+    color: cadetblue;
+}
+a{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+li:hover{
+    background-color: lightblue;
+}
