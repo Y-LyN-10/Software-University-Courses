@@ -1,0 +1,14 @@
+body{
+    margin: 2px;
+    padding: 0;
+}
+canvas {
+    border: 3px dotted red;
+	font-family: "NeutraText-Bold", "Arial";
+}
+
+@font-face {
+    font-family: 'NeutraText-Bold', 'Arial';
+    src: url('font/NeutraText-Bold.ttf') format('truetype'),
+         url('font/NeutraText Bold.otf') format('opentype');
+}

@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'calibri';
+    src: url('../font/CALIBRI.TTF');
+    src: local('☺'), url('../font/CALIBRI.TTF') format('truetype');
+}
+body{
+    margin: 0;
+    padding: 0;
+
+    height: 725px;
+
+    font-family: calibri;
+}
+
+#wrapper{
+    margin-left: 35px;
+
+    background-image: url('../imgs/bgr.jpg');
+    background-size: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 3em;
+    color: #F3BE60;
+}
+.square{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 2.5em;
+    list-style: square;
+    color: #F3BE60;
+}
+.tabbed{
+    margin-left: 50px;
+}
+#first{
+    margin-top: -5px;
+}
+.codeBox{
+    margin-top: -20px;
+    margin-left: 90px;
+    padding-bottom: -20px;
+    width: 84%;
+    height: 130px;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid #C7BFAC;
+}
+#short{
+    height: 90px;
+}
+strong, pre{
+    color: #FBEEC9;
+    font-weight: normal;
+}
+pre{
+    font-family: calibri;
+    font-size: 2em;
+    padding-left: 10px;
+    margin: 2px;
+}

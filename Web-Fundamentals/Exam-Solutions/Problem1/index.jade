@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Task 1 - Projects & Groups
+        link(href='style/style.css', rel='stylesheet', type='text/css')
+    body
+
+    - titles = ['csharp-basics', 'java-basics', 'javascript-basics', 'php-basics', 'seminars', 'teamwork-personal-skills', 'web-fundamentals'];
+
+        #wrapper
+            h1 Projects and Groups
+
+            h2 Projects:
+            ul
+                each item in titles
+                    li
+                        img(src = 'imgs/project-icon.png')
+                        a(href='#') #{item}
+
+            h2 Groups:
+            ul
+                each item in titles
+                    li
+                        img(src = 'imgs/group-icon.png')
+                        a(href='#') #{item}
