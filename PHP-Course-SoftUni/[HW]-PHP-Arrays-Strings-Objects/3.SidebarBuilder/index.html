@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sidebar Builder</title>
+</head>
+<body>
+	<pre>Problem 3. Sidebar Builder
+Write a PHP program SidebarBuilder.php that takes data from several input
+fields and builds 3 sidebars. The input fields are categories, tags and months.
+The first sidebar should contain a list of the categories, the second sidebar
+– a list of the tags and the third should contain the months. The entries in the
+input strings will be separated by a comma and space ", ". Styling the page is
+optional. Semantic HTML is required.</pre>
+
+	<form method="post" action="sidebar-builder.php">
+		Categories: <input type="text" name="categories" required="true"
+		value="Knitting, Cycling, Swimming, Dancing"><p>
+		Tags: <input type="text" name="tags" required="true"
+		value="person, free time, love, peace, protest"><p>
+		Months: <input type="text" name="months" required="true"
+		value="April, May, June, July"><p>
+		<input type="submit" value="Generate"/>
+	</form>
+</body>
+</html>
