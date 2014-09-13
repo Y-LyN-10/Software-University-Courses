@@ -1,0 +1,18 @@
+Problem 13. C# and .NET Differences
+
+Describe the difference between C# and .NET Framework in 2-3 sentences. 
+Write your description in a text file called “csharp-and-dot-net-framework.txt”. 
+Use English.
+
+----------------------------------------------------------------------------
+
+So... The .NET Framework is a software framework that runs primarily on 
+Microsoft Windows. It includes a large library and provides language 
+interoperability across several programming languages. And C# is only one 
+of these languages. Programs written for the .NET Framework execute in a 
+software environment, known as the Common Language Runtime (CLR), an 
+application virtual machine that provides important services such as 
+security, memory management, and exception handling. The class library 
+and the CLR together constitute the .NET Framework. And also, all
+programs, written on the .Net Framework are compilling into an .exe file,
+no matter of language (C#, Visual Basic or other).

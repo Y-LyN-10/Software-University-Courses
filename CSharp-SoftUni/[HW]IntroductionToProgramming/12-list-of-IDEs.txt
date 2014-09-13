@@ -1,0 +1,47 @@
+Problem 12. Development Environments
+
+Perform a research (e.g. in Google or Wikipedia) and provide a short list with 
+popular development environments (IDEs) like Visual Studio. Write in a text file 
+called “list-of-IDEs.txt” at least five IDEs along with 2-3 sentences about each 
+of them. Use English.
+
+-------------------------------------------------------------------------------------
+
+1. Visual Studio
+This IDE is mostly used by corporate programmers to produce .NET code.
+Of of the best IDE's advantages is Intellisense, Automatic code formatting, extesnibility
+and of course, it compiles code.
+
+2. Eclipse
+This is the best alternative if you are not a big fan of Microsoft’s Visual Studio. 
+The interface is a lot cleaner and concise than Visual Studio and the languages that 
+are possible to use extend past the .Net Framework. Besides being the number on way 
+to develop Android applications via the Android SDK, it is fully extensible to use 
+languages such as Ruby, C, C++ and many many more. The most important advantage of 
+Eclipse is that it's free. Compiles code.
+
+3.Netbeans
+The is the number one alternative to Eclipse. This program is extensible and free, 
+and it compiles code which is a bonus. When installing Netbeans it comes with a Java 
+server called GlassFish that you could deploy on your computer for your testing 
+environment. This server is the second biggest server for Java next to WebSphere.
+
+4. Kate
+Kate is exactly how the website describes it, a text editor. Not to be looked down 
+upon as it does a lot more than a regular text edit can do and that is what makes 
+this an indispensable product. On of the advantages is that Kate uses Linux. And also,
+one of the best features for kate is code folding. 
+
+5.Gedit
+Gedit is the official editor of the gnome desktop and comes installed once the system 
+is setup. Very useful for the user that is casually editing code and not undertaking 
+major projects. This would be a good companion to Netbeans or Eclipse. Uses Linux too. 
+And it's already installed on gnome systems.  packages open at once to jump back and 
+forth between if need be. This is a highly useful when comparing documents and debugging
+code. Highlishts code and allows multiple source packages open at once to jump back 
+and forth between if need be. This is a highly useful when comparing documents and 
+debugging code. But it doesn't compile code.
+
+Source:
+http://hackaday.com/2010/08/24/top-5-integrated-development-environments/
+
