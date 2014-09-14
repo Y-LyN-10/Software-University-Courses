@@ -1,13 +1,15 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-Software-University-Training
+Software-University-Courses
 ============================
-Here I'll merge all repositories for SoftUni's Courses with homeworks
-=======
-Test-Repo
-=========
->>>>>>> a3be7dfaede5737cbe4f99199ccd938edfd986c5
-=======
-Test-Repo
-=========
->>>>>>> a3be7dfaede5737cbe4f99199ccd938edfd986c5
+Software University Homework Uploaded
+
+#### Level #0
+CSharp Basics - March 2014 - April 2014
+
+#### Level #1
+Java Basics - May 2014
+Web Fundamentals - June 2014
+JavaScript Basics - July 2014
+PHP Basics - August 2014
+
+#### Level #2
+Object Oriented Programming - September 2014
