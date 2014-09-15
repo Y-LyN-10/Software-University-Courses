@@ -1,0 +1,12 @@
+C:\Users\Heru_Elda\documents\visual studio 2013\Projects\CSharp-Define-Classes\1.MobilePhoneDevice\obj\Debug\1.LaptopShop.csprojResolveAssemblyReference.cache
+C:\Users\Heru_Elda\documents\visual studio 2013\Projects\CSharp-Define-Classes\1.MobilePhoneDevice\bin\Debug\1.MobilePhoneDevice.exe.config
+C:\Users\Heru_Elda\documents\visual studio 2013\Projects\CSharp-Define-Classes\1.MobilePhoneDevice\bin\Debug\1.MobilePhoneDevice.exe
+C:\Users\Heru_Elda\documents\visual studio 2013\Projects\CSharp-Define-Classes\1.MobilePhoneDevice\bin\Debug\1.MobilePhoneDevice.pdb
+C:\Users\Heru_Elda\documents\visual studio 2013\Projects\CSharp-Define-Classes\1.MobilePhoneDevice\obj\Debug\1.MobilePhoneDevice.exe
+C:\Users\Heru_Elda\documents\visual studio 2013\Projects\CSharp-Define-Classes\1.MobilePhoneDevice\obj\Debug\1.MobilePhoneDevice.pdb
+C:\Users\Heru_Elda\Documents\Visual Studio 2013\Projects\CSharp-Define-Classes\1.LaptopShop\bin\Debug\1.MobilePhoneDevice.exe.config
+C:\Users\Heru_Elda\Documents\Visual Studio 2013\Projects\CSharp-Define-Classes\1.LaptopShop\obj\Debug\1.MobilePhoneDevice.exe
+C:\Users\Heru_Elda\Documents\Visual Studio 2013\Projects\CSharp-Define-Classes\1.LaptopShop\bin\Debug\1.MobilePhoneDevice.exe
+C:\Users\Heru_Elda\Documents\Visual Studio 2013\Projects\CSharp-Define-Classes\1.LaptopShop\bin\Debug\1.MobilePhoneDevice.pdb
+C:\Users\Heru_Elda\Documents\Visual Studio 2013\Projects\CSharp-Define-Classes\1.LaptopShop\obj\Debug\1.MobilePhoneDevice.pdb
+C:\Users\Heru_Elda\Documents\Visual Studio 2013\Projects\CSharp-Define-Classes\1.LaptopShop\obj\Debug\1.LaptopShop.csprojResolveAssemblyReference.cache
