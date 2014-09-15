@@ -1,1 +1,0 @@
-c:\users\heru_elda\documents\visual studio 2013\Projects\CSharp-Define-Classes\1.MobilePhoneDevice\bin\Debug\1.MobilePhoneDevice.exe.config
