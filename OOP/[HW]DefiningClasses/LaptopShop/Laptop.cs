@@ -1,20 +1,27 @@
 ﻿using System;
+using System.Net.Configuration;
 using System.Text;
 
-namespace _1.LaptopShop
+namespace LaptopShop
 {
     public class Laptop
     {
         public Laptop(string model, string manufacturer, string processor,
-            string graphicsCard, Battery battery, double screenSize, decimal price)
+            string graphicsCard, string batteryDescription, double batteryLifeInHours, double screenSize, decimal price)
         {
             this.Model = model;
             this.Manufacturer = manufacturer;
             this.Processor = processor;
             this.GraphicsCard = graphicsCard;
-            this.Battery = battery; // new Battery(desctiption, lifeInHours)
+            this.Battery = new Battery(batteryDescription, batteryLifeInHours);
             this.ScreenSize = screenSize;
             this.Price = price;
+        }
+
+        public Laptop(string model, string manufacturer, string processor,
+            string graphicsCard, string batteryDescription)
+            : this(model, manufacturer, processor, graphicsCard, batteryDescription, 0, 0, 0)
+        {
         }
 
         public string Model { get; private set; }
@@ -35,13 +42,11 @@ namespace _1.LaptopShop
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendFormat("Laptop: {0} {1}\nProcessor: {2}\nGraphics card: {3}\n",
-                this.Manufacturer, this.Model, this.Processor, this.GraphicsCard);
-            sb.AppendFormat("Screen size: {0} inches\nPrice: {1} lv\nBattery: {2}\nBattery life: {3} hours",
-                this.ScreenSize, this.Price, this.Battery.Description, this.Battery.LifeInHours);
+            sb.AppendFormat("Laptop: {1} {2}{0}Processor: {3}{0}Graphics card: {4}{0}Screen size: {5} inches{0}Price: {6} lv{0}Battery: {7}", 
+                Environment.NewLine, this.Manufacturer, this.Model, this.Processor, this.GraphicsCard, this.ScreenSize, this.Price, this.Battery);
 
             return sb.ToString();
-      }
+        }
 
         //TODO: Add Validations
     }

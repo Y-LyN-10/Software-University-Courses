@@ -1,8 +1,0 @@
-﻿Problem 1.	Laptop Shop
-Define a class Laptop that holds the following information about a laptop device: model, manufacturer, processor, graphics card, battery, battery life in hours, screen size and price.
-•	Define two separate classes (class Laptop holding an instance of class Battery). 
-•	Define several constructors that take different sets of arguments (full laptop + battery information or only part of it). Use proper variable types.
-•	All non-numeric data should be mandatory. All numeric fields should have a default value of 0.
-•	Add a method in the Laptop class that displays information about the given instance
-o	Tip: override the ToString() method
-•	Put validation in all property setters and constructors. String values cannot be empty, and numeric data cannot be negative. Throw exceptions when improper data is entered.
