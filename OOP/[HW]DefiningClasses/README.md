@@ -46,9 +46,9 @@ Define a class <strong>Person</strong> and the classes <strong>Trainer, Student<
 	-	**Trainer** – method **CreateCourse([courseName])** that prints that the course has been created
 		* Senior Trainer – method **DeleteCourse([courseName])** that prints that the course has been deleted
 	-	**Student** – fields **student number, average grade**
-			*	**Current Student** – field **current course**
-				-	**Onsite Student** – field **number of visits**
-			*	**Dropout Student** – field **dropout reason**, method **Reapply()** that prints all information about the student and the dropout reason
+		* **Current Student** – field **current course**
+		- **Onsite Student** – field **number of visits**
+		- **Dropout Student** – field **dropout reason**, method **Reapply()** that prints all information about the student and the dropout reason
 		
 Write a class **SULSTest** that tests the implemented class structure. Create a **list of objects from each class**. Extract only the **Current Students, sort them by average grade** and **print information** about each one on the console.
 Tip: Use the LINQ extension methods **Where()** and **OrderBy()** with lambda expressions.
