@@ -14,12 +14,13 @@ Define a class <strong>Laptop</strong> that holds the following information abou
 * Add a method in the <strong>Laptop</strong> class that displays information about the given instance
 	-	Tip: override the <strong>ToString()</strong> method
 *	Put <strong>validation</strong> in all property setters and constructors. String values cannot be empty, and numeric data cannot be negative. Throw exceptions when improper data is entered.
-<br>
-<strong>Sample laptop description (full):</strong>
-<strong>Model</strong> Lenovo Yoga 2 Pro model
-<strong>Manufacturer</strong> Lenovo
-<strong>Processor</strong> Intel Core i5-4210U (2-core, 1.70 - 2.70 GHz, 3MB cache) 
-<strong>RAM</strong> 8 GB		
+
+<p>
+<strong>Sample laptop description (full):</strong><br>
+<strong>Model</strong> Lenovo Yoga 2 Pro<br>
+<strong>Manufacturer</strong> Lenovo<br>
+<strong>Processor</strong> Intel Core i5-4210U (2-core, 1.70 - 2.70 GHz, 3MB cache) <br>
+<strong>RAM</strong> 8 GB <br>		
 <strong>Graphics card</strong> Intel HD Graphics 4400		
 <strong>HDD</strong> 128GB SSD		
 <strong>Screen</strong>	13.3" (33.78 cm) – 3200 x 1800 (QHD+), IPS sensor display		
@@ -30,12 +31,14 @@ Define a class <strong>Laptop</strong> that holds the following information abou
 <strong>Sample laptop description (mandatory properties only)</strong>
 <strong>Model</strong> HP 250 G2
 <strong>Price</strong> 699.00 lv.
-<p>	
+
+<p>
 #### Problem 3.	PC Catalog
 Define a class <strong>Computer</strong> that holds <strong>name, several components</strong> and <strong>price</strong>. The components (processor, graphics card, motherboard, etc.) should be objects of class <strong>Component</strong>, which holds <strong>name, details</strong> (optional) and <strong>price</strong>. 
-*	Define several constructors that take different sets of arguments. Use proper variable types. Use properties to validate the data. Throw exceptions when improper data is entered.
-*	Add a method in the Computer class that displays the <strong>name</strong>, each of the <strong>components' name</strong> and <strong>price</strong> and the <strong>total computer price</strong>. The total price is the <strong>sum of all components' price</strong>. Print the prices in BGN currency format.
-*	Create several Computer objects, <strong>sort them by price</strong>, and print them on the console using the created display method.
+
+* Define several constructors that take different sets of arguments. Use proper variable types. Use properties to validate the data. Throw exceptions when improper data is entered.
+* Add a method in the Computer class that displays the <strong>name</strong>, each of the <strong>components' name</strong> and <strong>price</strong> and the <strong>total computer price</strong>. The total price is the <strong>sum of all components' price</strong>. Print the prices in BGN currency format.
+* Create several Computer objects, <strong>sort them by price</strong>, and print them on the console using the created display method.
 
 #### Problem 4.** Software University Learning System
 Define a class <strong>Person</strong> and the classes <strong>Trainer, Student</strong>. There are two types of trainers – <strong>Junior</strong> and <strong>Senior Trainer</strong>. There are three types of Students – <strong>Graduate, Current</strong> and Dropout Student. There are two types of Current Students – **Online** and **Onsite Student**. Implement the given structure below. **A class down in the hierarchy should implement the fields, properties and methods of the classes above it.** (Tip: Use **Inheritance** to achieve code reusability). The classes should implement the following fields/methods:
