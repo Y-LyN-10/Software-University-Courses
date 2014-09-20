@@ -10,11 +10,13 @@ namespace LaptopShop
             this.LifeInHours = lifeInHours;
         }
 
-        public Battery(string description) : this(description, 0)
+        public Battery(string description)
+            : this(description, 0)
         {
         }
 
         public double LifeInHours { get; private set; }
+
         public string Description { get; private set; }
 
         public override string ToString()

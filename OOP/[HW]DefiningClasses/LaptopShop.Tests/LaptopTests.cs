@@ -8,7 +8,7 @@ namespace LaptopShop.Tests
     public class LaptopTests
     {
         [TestMethod]
-        public void CretingLaptopWithValidDataShouldSetAllPropertiesCorrectly()
+        public void CreatingLaptopWithValidDataShouldSetAllPropertiesCorrectly()
         {
             var laptop = new Laptop(
                 "VN7-591G", // Model

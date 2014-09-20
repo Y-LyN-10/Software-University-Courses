@@ -8,7 +8,7 @@ namespace LaptopShop.Tests
     public class BatteryTests
     {
         [TestMethod]
-        public void CretingBattertWithValidDataShouldSetAllPropertiesCorrectly()
+        public void CreatingBatterytWithValidDataShouldSetAllPropertiesCorrectly()
         {
             var battery = new Battery("8 cells", 4.5);
 
