@@ -42,15 +42,15 @@ namespace LaptopShop
                 1959
             );
 
-            laptops = new List<Laptop>() { acerAspire, lenovo, toshiba };  
+            Laptop hp = new Laptop("HP 250 G2", 699);
+
+            laptops = new List<Laptop>() { acerAspire, lenovo, toshiba, hp };  
 
             foreach (var laptop in laptops)
             {
                 Console.WriteLine(laptop.ToString());
                 Console.WriteLine();
             }
-
-            //TODO: Write Unit Tests
         }
     }
 }

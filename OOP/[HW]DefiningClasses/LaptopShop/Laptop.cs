@@ -6,6 +6,10 @@ namespace LaptopShop
 {
     public class Laptop
     {
+        private string _model;
+        private double _screenSize;
+        private decimal _price;
+
         public Laptop(string model, string manufacturer, string processor,
             string graphicsCard, string batteryDescription, double batteryLifeInHours, double screenSize, decimal price)
         {
@@ -18,13 +22,39 @@ namespace LaptopShop
             this.Price = price;
         }
 
-        public Laptop(string model, string manufacturer, string processor,
-            string graphicsCard, string batteryDescription)
+        public Laptop(string model, string manufacturer, string processor, string graphicsCard, string batteryDescription)
             : this(model, manufacturer, processor, graphicsCard, batteryDescription, 0, 0, 0)
         {
         }
 
-        public string Model { get; private set; }
+        public Laptop(string model, decimal price)
+            : this(model, null, null, null, null, 0, 0, price)
+        {
+        }
+
+        /* Only model and price are mandatory, so other values can be null 
+           or empty and there is no need to validate this everywhere */
+
+        public string Model
+        {
+            get { return this._model; }
+            private set
+            {
+                try
+                {
+                    if (string.IsNullOrEmpty(value))
+                    {
+                        throw new ArgumentNullException();
+                    }
+                    this._model = value;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Model name can't be null or empty", ex);
+                    throw;
+                }
+            }
+        }
 
         public string Manufacturer { get; private set; }
 
@@ -32,9 +62,47 @@ namespace LaptopShop
 
         public string GraphicsCard { get; private set; }
 
-        public double ScreenSize { get; private set; }
+        public double ScreenSize
+        {
+            get { return this._screenSize; }
+            private set
+            {
+                try
+                {
+                    if (_screenSize < 0)
+                    {
+                        throw new ArgumentOutOfRangeException();
+                    }
+                    this._screenSize = value;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Screen size can't be a negative number", ex);
+                    throw;
+                }
+            }
+        }
 
-        public decimal Price { get; private set; }
+        public decimal Price
+        {
+            get { return this._price; }
+            private set
+            {
+                try
+                {
+                    if (_price < 0)
+                    {
+                        throw new ArgumentOutOfRangeException();
+                    }
+                    this._price = value;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Price can't be a negative number", ex);
+                    throw;
+                }
+            }
+        }
 
         public Battery Battery { get; private set; }
 
