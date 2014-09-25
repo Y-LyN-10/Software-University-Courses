@@ -15,22 +15,19 @@ Create a class Path3D to hold a sequence of points in the 3D space. Create a sta
 #### Problem 4.	* HTML Dispatcher
 Write a class ElementBuilder that creates HTML elements:
 *	The class constructor should take the element's name as argument.
-*	Write a method AddAtribute(attribute, value) that adds an attribute and value to the element. For example, we create an element a and add the attributes href="www.softuni.bg" and class="links". The result is '''html<a href="www.softuni.bg" class="links"><a/>'''.
+*	Write a method AddAtribute(attribute, value) that adds an attribute and value to the element. For example, we create an element a and add the attributes href="www.softuni.bg" and class="links". The result is &lt;a href="www.softuni.bg" class="links"&gt;&lt;a/&gt;'''.
 *	Write a method AddContent(string) that inserts content inside the current tag (e.g. <div>Text</div>).
-*	Overload the * operator for ElementBuilder objects. The operator should multiply the string value of the element n times and return the result as string. (e.g. '''htlml<li></li> * 3 = <li></li><li></li><li></li>)'''.
+*	Overload the * operator for ElementBuilder objects. The operator should multiply the string value of the element n times and return the result as string. (e.g. &lt;li&gt;&lt;/li&gt; * 3 = &lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;).
 
 Sample Source Code: 
-'''html
 ElementBuilder div = new ElementBuilder("div");
 div.AddAttribute("id", "page");
 div.AddAttribute("class", "big");
 div.AddContent("<p>Hello</p>");
 Console.WriteLine(div * 2);	
-'''
+
 Output:
-'''html 
 <div id="page" class="big"><p>Hello></p></div><div id="page" class="big"><p>Hello></p></div>
-'''
 
 Write a static class HTMLDispatcher that holds 3 static methods: CreateImage(), CreateURL(), CreateInput(), which takes a set of arguments and return the HTML element as string. Use the ElementBuilder class.
 *	CreateImage() takes image source, alt and title.
