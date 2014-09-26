@@ -1,4 +1,6 @@
-﻿namespace EnterNumbers
+﻿using System.Runtime.Remoting.Messaging;
+
+namespace EnterNumbers
 {
     using System;
     using System.Collections.Generic;
@@ -8,53 +10,71 @@
         public const int NumberOfLoops = 10;
         public static List<int> numbers = new List<int>();
 
-        private static void ReadNumber(int startNumber, int endNumber, int index)
+        private static void ReadNextNumber(int startNumber, int endNumber, int index)
         {
             if (index > NumberOfLoops)
             {
-                Console.WriteLine("You entered these numbers: ");
-                foreach (var number in numbers)
-                {
-                    Console.Write(number + ", ");
-                }
-
-                Console.WriteLine("Thank you!");
-                Console.WriteLine("Have a good luck in the Lottery!");
+                PrintNumbers(numbers);
             }
             else
             {
                 Console.Write(string.Format("a{0} = ", index));
-                int number;
+               
                 string input = Console.ReadLine();
-                bool isNumeric = int.TryParse(input, out number);
+                bool numberIsValid = ValidateNumber(input, startNumber, endNumber);
 
-                try
+                if (numberIsValid)
                 {
-                    if (!isNumeric)
-                    {
-                        throw new FormatException();
-                    }
-                    if (number < startNumber || number > endNumber)
-                    {
-                        throw new ArgumentOutOfRangeException();
-                    }
-
-                    startNumber = number;
+                    int number = int.Parse(input);
                     numbers.Add(number);
-                    ReadNumber(startNumber, endNumber, index + 1);
+                    startNumber = number;
+                    ReadNextNumber(startNumber, endNumber, index + 1);
                 }
-                catch (FormatException)
+                else
                 {
-                    Console.WriteLine("Invalid Number");
-                    ReadNumber(startNumber, endNumber, index);
-                    //throw;
+                    ReadNextNumber(startNumber, endNumber, index);
                 }
-                catch (ArgumentException)
+            }
+        }
+
+        private static void PrintNumbers(List<int> numbers)
+        {
+            Console.WriteLine("You entered these numbers: ");
+            foreach (var number in numbers)
+            {
+                Console.Write(number + ", ");
+            }
+
+            Console.WriteLine("Thank you!");
+        }
+
+        private static bool ValidateNumber(string input, int startNumber, int endNumber)
+        {
+            int number;
+            bool isNumeric = int.TryParse(input, out number);
+
+            try
+            {
+                if (!isNumeric)
                 {
-                    Console.WriteLine(string.Format("Next number should be in range[{0}..100]", startNumber));
-                    ReadNumber(startNumber, endNumber, index);
-                    //throw;
+                    throw new FormatException();
                 }
+                if (number < startNumber || number > endNumber)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+
+                return true;
+            }
+            catch (FormatException fe)
+            {
+                Console.WriteLine("Invalid Number");
+                return false;
+            }
+            catch (ArgumentException)
+            {
+                Console.WriteLine(string.Format("Next number should be in range[{0}..100]", startNumber));
+                return false;
             }
         }
 
@@ -70,7 +90,7 @@
             int startNumber = 1;
             int endNumber = 100;
 
-            ReadNumber(startNumber, endNumber, 1);
+            ReadNextNumber(startNumber, endNumber, 1);
         }
     }
 }
