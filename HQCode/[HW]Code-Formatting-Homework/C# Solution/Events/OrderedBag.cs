@@ -1,13 +1,15 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Event
+﻿namespace Event
 {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+
     class OrderedBag<T> : ICollection<T>
     {
+        public int Count { get; private set; }
+
+        public bool IsReadOnly { get; private set; }
+
         public IEnumerator<T> GetEnumerator()
         {
             throw new NotImplementedException();
@@ -42,9 +44,6 @@ namespace Event
         {
             throw new NotImplementedException();
         }
-
-        public int Count { get; private set; }
-        public bool IsReadOnly { get; private set; }
 
         internal OrderedBag<Event> RangeFrom(Event p1, bool p2)
         {

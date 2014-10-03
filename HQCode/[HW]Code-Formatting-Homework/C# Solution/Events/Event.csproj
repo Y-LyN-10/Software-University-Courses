@@ -41,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Event.cs" />
+    <Compile Include="EventHolder.cs" />
+    <Compile Include="Messages.cs" />
     <Compile Include="MultiDictionary.cs" />
     <Compile Include="OrderedBag.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Program.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
