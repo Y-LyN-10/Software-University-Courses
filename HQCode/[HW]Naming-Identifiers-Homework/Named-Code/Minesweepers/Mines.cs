@@ -1,22 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using Minesweepers;
 
 public class Mines
 {
     public static void Main(string[] arguments)
     {
-        string command = string.Empty;
-        char[,] playField = CreatePlayField();
-        char[,] bombField = CreateBombField();
+        const int MaxScore = 35;
+
         int personalScore = 0;
-        bool hitBomb = false;
-        List<Score> topScorers = new List<Score>(6);
         int row = 0;
         int col = 0;
+
+        string command = string.Empty;
+
+        char[,] playField = CreatePlayField();
+        char[,] bombField = CreateBombField();
+
+        bool hitBomb = false;
         bool isNewGame = true;
-        const int MaxScore = 35;
         bool isWon = false;
+
+        var topScorers = new List<Score>(6);
 
         do
         {
@@ -32,17 +37,21 @@ public class Mines
                 Console.WriteLine("'exit' - exit the game");
                 Console.WriteLine("'4x7' - example for entering row and col");
                 Console.WriteLine("####################################");
+                
                 DrawPlayField(playField);
+                
                 isNewGame = false;
             }
 
             Console.Write("Enter row and col[row x col]: ");
             command = Console.ReadLine().Trim();
+            
             if (command.Length >= 3)
             {
                 if (int.TryParse(command[0].ToString(), out row) &&
-                int.TryParse(command[2].ToString(), out col) &&
-                    row <= playField.GetLength(0) && col <= playField.GetLength(1))
+                    int.TryParse(command[2].ToString(), out col) &&
+                    row <= playField.GetLength(0) && 
+                    col <= playField.GetLength(1))
                 {
                     command = "turn";
                 }
@@ -56,9 +65,12 @@ public class Mines
                 case "restart":
                     playField = CreatePlayField();
                     bombField = CreateBombField();
+
                     DrawPlayField(playField);
+                    
                     hitBomb = false;
                     isNewGame = false;
+                    
                     break;
                 case "exit":
                     Console.WriteLine("Bye Bye! :)");
@@ -98,8 +110,11 @@ public class Mines
 
                 Console.WriteLine("You hit a bomb and ... you are dead. You should try Again");
                 Console.Write("\nPersonal Score: {0} Enter your Nickname: ", personalScore);
+                
                 string nickname = Console.ReadLine();
+                
                 Score playerScore = new Score(nickname, personalScore);
+                
                 if (topScorers.Count < 5)
                 {
                     topScorers.Add(playerScore);
@@ -112,6 +127,7 @@ public class Mines
                         {
                             topScorers.Insert(index, playerScore);
                             topScorers.RemoveAt(topScorers.Count - 1);
+                            
                             break;
                         }
                     }
@@ -125,7 +141,9 @@ public class Mines
 
                 playField = CreatePlayField();
                 bombField = CreateBombField();
+                
                 personalScore = 0;
+                
                 hitBomb = false;
                 isNewGame = true;
             }
@@ -133,34 +151,45 @@ public class Mines
             if (isWon)
             {
                 Console.WriteLine("\nBRAVO! You just beat the sh*t out of me! Max Score: {0} reached! ", MaxScore);
+                
                 DrawPlayField(bombField);
+                
                 Console.WriteLine("Enter your Nickname/probably MASTER :)/: ");
+                
                 string nickname = Console.ReadLine();
+                
                 Score playerScore = new Score(nickname, personalScore);
+
                 topScorers.Add(playerScore);
                 GetRating(topScorers);
+
                 playField = CreatePlayField();
                 bombField = CreateBombField();
+
                 personalScore = 0;
+
                 isWon = false;
                 isNewGame = true;
             }
-        }
-        while (command != "exit");
+        } while (command != "exit");
+
         Console.WriteLine("Have a nice day! :)");
         Console.WriteLine("Made in Bulgaria!");
         Console.WriteLine("Press any key to continue . . .");
+
         Console.ReadKey();
     }
 
     private static void GetRating(List<Score> topScorers)
     {
         Console.WriteLine("\nRating:");
+
         if (topScorers.Count > 0)
         {
             for (int i = 0; i < topScorers.Count; i++)
             {
-                Console.WriteLine("{0}. {1} --> {2} opened cells", i + 1, topScorers[i].Nickname, topScorers[i].Points);
+                Console.WriteLine("{0}. {1} --> {2} opened cells", 
+                    i + 1, topScorers[i].Nickname, topScorers[i].Points);
             }
 
             Console.WriteLine();
@@ -174,6 +203,7 @@ public class Mines
     private static void EnterSurroundingBombCount(char[,] playField, char[,] bombField, int row, int col)
     {
         char surroundingBombCount = GetSurroundingBombCount(bombField, row, col);
+        
         bombField[row, col] = surroundingBombCount;
         playField[row, col] = surroundingBombCount;
     }
@@ -182,11 +212,14 @@ public class Mines
     {
         int rowCount = playField.GetLength(0);
         int colCount = playField.GetLength(1);
+        
         Console.WriteLine("\n 0 1 2 3 4 5 6 7 8 9");
         Console.WriteLine(" ---------------------");
+        
         for (int row = 0; row < rowCount; row++)
         {
             Console.Write("{0} | ", row);
+
             for (int col = 0; col < colCount; col++)
             {
                 Console.Write(string.Format("{0} ", playField[row, col]));
@@ -201,9 +234,10 @@ public class Mines
 
     private static char[,] CreatePlayField()
     {
-        int fieldRows = 5;
-        int fieldCols = 10;
-        char[,] playField = new char[fieldRows, fieldCols];
+        const int fieldRows = 5;
+        const int fieldCols = 10;
+
+        var playField = new char[fieldRows, fieldCols];
         for (int row = 0; row < fieldRows; row++)
         {
             for (int col = 0; col < fieldCols; col++)
@@ -217,9 +251,10 @@ public class Mines
 
     private static char[,] CreateBombField()
     {
-        int fieldRows = 5;
-        int fieldCols = 10;
-        char[,] bombField = new char[fieldRows, fieldCols];
+        const int fieldRows = 5;
+        const int fieldCols = 10;
+
+        var bombField = new char[fieldRows, fieldCols];
 
         for (int row = 0; row < fieldRows; row++)
         {
@@ -229,11 +264,14 @@ public class Mines
             }
         }
 
-        List<int> bombMap = new List<int>();
+        var bombMap = new List<int>();
+
         while (bombMap.Count < 15)
         {
             Random randomInteger = new Random();
+
             int randomLocation = randomInteger.Next(50);
+            
             if (!bombMap.Contains(randomLocation))
             {
                 bombMap.Add(randomLocation);
@@ -244,6 +282,7 @@ public class Mines
         {
             int col = bombLocation / fieldCols;
             int row = bombLocation % fieldCols;
+            
             if (row == 0 && bombLocation != 0)
             {
                 col--;
@@ -331,33 +370,5 @@ public class Mines
         }
 
         return char.Parse(bombCount.ToString());
-    }
-
-    public class Score
-    {
-        private string nickname;
-        private int points;
-
-        public Score()
-        {
-        }
-
-        public Score(string nickname, int current)
-        {
-            this.Nickname = nickname;
-            this.Points = current;
-        }
-
-        public string Nickname
-        {
-            get { return this.nickname; }
-            set { this.nickname = value; }
-        }
-
-        public int Points
-        {
-            get { return this.points; }
-            set { this.points = value; }
-        }
     }
 }
