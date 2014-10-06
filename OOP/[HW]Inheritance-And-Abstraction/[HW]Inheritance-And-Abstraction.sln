@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.SchoolSystem", "SchoolSystem\1.SchoolSystem.csproj", "{CF2D48B5-3CC9-4822-80DE-6CB3EB80967A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.People", "People\2.People.csproj", "{C28F8819-7817-4238-A20F-5DDC2BBEDCA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Animals", "Animals\3.Animals.csproj", "{39B8B12A-F376-4A4F-A55C-1CF7D39546F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{CF2D48B5-3CC9-4822-80DE-6CB3EB80967A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF2D48B5-3CC9-4822-80DE-6CB3EB80967A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF2D48B5-3CC9-4822-80DE-6CB3EB80967A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C28F8819-7817-4238-A20F-5DDC2BBEDCA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C28F8819-7817-4238-A20F-5DDC2BBEDCA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C28F8819-7817-4238-A20F-5DDC2BBEDCA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C28F8819-7817-4238-A20F-5DDC2BBEDCA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39B8B12A-F376-4A4F-A55C-1CF7D39546F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39B8B12A-F376-4A4F-A55C-1CF7D39546F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39B8B12A-F376-4A4F-A55C-1CF7D39546F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39B8B12A-F376-4A4F-A55C-1CF7D39546F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
