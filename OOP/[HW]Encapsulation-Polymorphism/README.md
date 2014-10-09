@@ -1,6 +1,6 @@
 ### Problem 2. Bank of Kurtovo Konare
 
-A bank holds different types of accounts for its customers: **deposit accounts, loan accounts* and *mortgage accounts**. 
+A bank holds different types of accounts for its customers: **deposit accounts, loan accounts** and **mortgage accounts**. 
 * Customers could be **individuals** or **companies**.
 * All accounts have **customer, balance** and **interest rate** (monthly based). 
 * **Deposit** accounts are allowed to deposit and withdraw money. **Loan** and **mortgage** accounts can only deposit money.
