@@ -1,0 +1,51 @@
+@mixin reset
+  margin: 0
+  padding: 0
+  list-style: none
+
+body, ul, li, a, div, img, p
+  +reset
+  font-family: Tahoma, geneva, sans-serif
+
+img
+  float: left
+  padding: 1px
+  margin-right: 7px
+  border: 1px solid black
+
+ul
+  width: 340px
+
+  li
+    border-bottom: 1px dashed lightgray
+    min-height: 100px
+    padding: 5px
+
+    strong a
+      text-decoration: none
+      color: #000000
+      font-size: 0.8em
+      display: block
+      padding-bottom: 3px
+      line-height: 110%
+
+      &:hover
+        text-decoration: underline
+
+  li:last-child
+    border: none
+
+.date
+  font-weight: bold
+  color: gray
+  font-size: 0.6em
+  padding-bottom: 2px
+
+article
+  font-size: 0.75em
+  padding-bottom: 5px
+
+
+
+
+

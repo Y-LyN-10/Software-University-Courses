@@ -1,0 +1,24 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Task1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script id="news-articles-template" type="text/x-handlebars-template">
+    <ul>
+        {{#news}}
+        <li>
+            <img src="{{image}}" alt="{{title}}"/>
+            <strong><a href="#">{{title}}</a></strong>
+            <div class="date">{{date}}</div>
+            <article>{{info}}</article>
+        </li>
+        {{/news}}
+    </ul>
+</script>
+<script src="libs/handlebars.min.js"></script>
+<script src="news.js"></script>
+</body>
+</html>
