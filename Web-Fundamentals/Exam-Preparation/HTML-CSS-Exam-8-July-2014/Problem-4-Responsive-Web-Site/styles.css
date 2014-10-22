@@ -3,7 +3,10 @@
 /* Common
 /*
 /*****************************************************************************/
-
+*{
+    margin: 0;
+    padding: 0;
+}
 /* Fonts */
 @font-face {
   font-family: 'Fairview';
@@ -315,4 +318,43 @@ a:hover {
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+/* media */
+@media all and (max-width: 568px){
+    body  .site{
+        width: 100%;
+    }
+    body .site .container{
+        width: 100%;
+           }
+    
+    .header > .navigation >li{
+        display: inline-block;
+    }
+
+    table, tr, th, tbody, tr, tfoot{
+        display: inline-block;
+    }
+
+    thead > tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    td{
+        position: relative;
+        border: none;
+        box-sizing: border-box;
+        padding: 0;
+        display: block;
+        width: 70%;
+    }
+
+
+    .footer > .foot-body > .navigation > li{
+        display: inline-block;
+        width: 100%;
+    }
 }

@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Problem 1 - Projects and Groups
+        link(href='styles/style.css', rel='stylesheet', type='text/css')
+    body
+
+        - courses = ['csharp-basics', 'java-basics', 'javascript-basics', 'php-basics', 'seminars', 'teamwork-personal-skills', 'web-fundamentals'];
+
+        #wrapper
+            h1 Projects and Groups
+
+            h2 Projects:
+            ul
+                each item in courses
+                    li.box
+                        img(src = 'project-icon.png')
+                        a(href='#') #{item}
+
+            h2 Grpoups:
+            ul
+                each item in courses
+                    li.box
+                        img(src = 'group-icon.png')
+                        a(href='#') #{item}

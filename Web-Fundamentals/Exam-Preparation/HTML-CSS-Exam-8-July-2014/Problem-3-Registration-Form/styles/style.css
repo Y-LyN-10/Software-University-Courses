@@ -1,0 +1,112 @@
+html, body, div, section, a, img, aside, form, input{
+    margin: 0;
+    padding: 0;
+
+    display: block;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+#wrapper{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h1{
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+section{
+    float: left;
+    width: 60%;
+    display: inline-block;
+}
+
+fieldset{
+    border: 1px dashed gray;
+}
+
+legend{
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: bold;
+    background-color: #666666;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+input{
+    display: inline;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+label{
+    width: 120px;
+    display: inline-block;
+    background-color: #cccccc;
+    padding: 6px;
+    border-right: 5px solid #f7f7f7;
+}
+
+fieldset > div{
+    background-color: #e5e5e5;
+    margin-bottom: 3px;
+}
+
+aside{
+    float: left;
+    width: 30%;
+    vertical-align: top;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 12px;
+    margin-left: 10px;
+    border: 1px solid #cccccc;
+}
+
+aside > h2{
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+aside > p {
+    font-size: 12px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px dashed gray;
+}
+
+.username{
+    background: url('../username-icon.png') no-repeat;
+    background-position: left center;
+    background-color: #ffffff;
+}
+
+.psswd{
+    background: url('../password-icon.png') no-repeat;
+    background-position: left center;
+    background-color: #ffffff;
+}
+
+#personal > fieldset > div > input{
+    background: url('../field-icon.png') no-repeat;
+    background-position: left center;
+    background-color: #ffffff;
+}
+
+.submit-btn{
+    background-color: #ffffff;
+    margin-left: 175px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    text-align: right;
+}
