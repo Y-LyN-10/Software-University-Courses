@@ -1,4 +1,4 @@
-#### Some of the problems are solved with Jade, so visit these links to learn more about it:
+#### Some of these problems are solved with Jade, so visit these links to learn more about it:
 
 * **<a href="http://jade-lang.com/">http://jade-lang.com/</a>** - Official Jade Documentation
 * **<a href="http://html2jade.org/">http://html2jade.org/</a>** - Online HTML to Jade converter
