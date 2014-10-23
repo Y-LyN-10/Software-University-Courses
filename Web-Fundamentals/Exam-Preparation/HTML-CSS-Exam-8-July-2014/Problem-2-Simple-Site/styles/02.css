@@ -1,0 +1,159 @@
+﻿html{
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size:14px;
+    line-height:18px;
+    color:#666;
+}
+#container{
+    margin:0 auto;
+    width:940px;
+    display:block;
+    box-sizing:border-box;
+}
+
+header#top-header{
+    margin:0 auto;
+    text-align:center;
+    width:564px;
+    padding:1rem 0; 
+}
+#top-header .logo{
+    margin: 0 auto;
+    width:70%;   
+    display:block;
+    text-align:center;    
+}
+#top-header .logo h1{
+    background: url(../images/site-logo.png) no-repeat 15px 5px;
+    background-size:50px;
+    font-size:45px;
+    line-height:60px;
+    color:#454544;
+    font-family: 'Patua One', cursive;
+}
+#top-header .logo h1:hover{
+    color:#76746F;
+    cursor:pointer;
+}
+#top-header .logo > h3{
+    font-size:12px;    
+    font-family:Georgia;
+    font-style:italic;
+    display:block;
+}
+nav{
+    width:100%;
+    margin:1rem 0;
+    padding:1rem;
+    border-bottom: 1px dashed #ACA8A3;
+    border-top: 1px dashed #ACA8A3;
+}
+nav ul li{
+    display:inline-block;
+}
+nav ul li a{
+    font-size:15px;
+    font-weight:bold;
+    color:#9A9691;
+    text-decoration:none;
+    padding:0.5rem;
+    margin:0 0.2rem;
+}
+nav ul li a:hover{
+    background-color:#EFEEEC;
+    color:#666;
+    border-radius:5px;
+}
+figure{
+    margin-bottom:1rem;
+}
+main, aside, footer {
+    display:inline-block;
+    float:left;
+    box-sizing:border-box;
+    font-family:Georgia;
+}
+main{
+    width:75%;
+    padding:1rem 1rem 1rem 0;
+    font-family:Georgia;    
+}
+article#important-article{
+    width:80%;
+    margin:0 auto;
+    text-align:center;
+    border-bottom: 1px dashed #ACA8A3;
+    border-top: 1px dashed #ACA8A3;
+    padding:2rem 1rem;
+    color:#666;    
+}
+article#important-article>h2{    
+    font-size:1.6rem;
+    line-height:2rem; 
+    margin-bottom:0.5rem;   
+}
+article#important-article>p{
+    font-size:1rem;
+    line-height:1.4rem;
+}
+main article{
+    color:black; 
+    margin-top:2rem;  
+}
+main article>h2{
+    font-size:2.4rem;
+    line-height:4rem;
+}
+main article>p{
+    font-size:1.2rem;
+    line-height:1.8rem;
+}
+aside{
+    width:25%;
+    
+}
+section#box{
+    background-color:#F9F9F8;
+    border:1px dashed #ACA8A3;
+    padding:2rem 1.5rem;
+}
+section#box h4{
+    font-size:1.3rem;
+    line-height:2.2rem;
+    color:#666;
+    font-weight:bold;
+}
+section#box ul li a{
+    font-size:1.1rem;
+    color:#0066C7;
+    text-decoration:none;
+    line-height:1.4rem;
+}
+section#box ul li a:hover{
+    color:red;
+    text-decoration:underline;
+}
+section#box ul li a:visited{
+    color:#7E318F;
+    text-decoration:none;
+}
+section#box:first-of-type{
+    margin-bottom:1rem;
+}
+form{
+    margin-bottom:0.5rem;
+}
+input[type="search"]{
+    max-width:65%;
+    border:1px solid #ccc;
+    padding:0.1rem;
+}
+
+footer{
+    margin-top:1rem;
+    width:100%;
+    text-align:center;
+    background-color:#EFEEEC;
+    border-top:1px solid #D0CCC7;
+    line-height:3rem;
+}
