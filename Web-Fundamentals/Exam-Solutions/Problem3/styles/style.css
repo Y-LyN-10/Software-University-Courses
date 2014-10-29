@@ -18,12 +18,14 @@ body {
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 3px; }
+  #wrapper #personal-details input[type=submit] {
+    background-image: none; }
   #wrapper fieldset {
     border: 1px dashed #b2b2b2; }
     #wrapper fieldset legend {
       padding: 5px;
       background-color: #666666;
-      color: white;
+      color: #ffffff;
       font-size: 0.8em;
       font-weight: bold; }
     #wrapper fieldset label {
@@ -41,11 +43,11 @@ body {
       line-height: 38px;
       width: 350px; }
     #wrapper fieldset .submitBox {
-      margin-left: 140px;
+      margin-left: 145px;
       border: 1px solid #e6e6e6;
       width: 350px;
       height: 40px;
-      background-color: white; }
+      background-color: #ffffff; }
     #wrapper fieldset input {
       padding: 4px;
       margin: 5px;
@@ -54,6 +56,8 @@ body {
       width: 300px;
       box-shadow: 2px;
       font-size: 14px; }
+    #wrapper fieldset input[type=submit] {
+      padding: 0; }
     #wrapper fieldset .btn {
       position: absolute;
       margin-top: 5px;
@@ -81,7 +85,7 @@ body {
     position: relative;
     float: right;
     margin-top: 13px;
-    background-color: white;
+    background-color: #ffffff;
     display: inline-block;
     width: 210px;
     height: 380px;
@@ -100,9 +104,11 @@ body {
 
 hr {
   border: 1px dashed #cccccc;
-  width: 520px;
+  width: 550px;
   margin-bottom: 20px; }
 
 h1 {
   color: #666666;
   font-size: 22px; }
+
+/*# sourceMappingURL=style.css.map */
