@@ -5,7 +5,10 @@
  Print each element on a new line. Indent child elements. */
 
 function traverse(selector) {
+    'use strict';
+
     var element = document.querySelector(selector);
+    traverseElement(element, '');
 
     function traverseElement(element, spacing) {
         var len, child, elementAsString;
@@ -28,8 +31,6 @@ function traverse(selector) {
             }
         });
     }
-
-    traverseElement(element, '');
 }
 
 var selector = ".birds";
