@@ -13,13 +13,11 @@ function traverse(selector) {
 
         elementAsString = spacing + element.nodeName.toLowerCase() + ':';
 
-        if(element.hasAttribute('class') || element.hasAttribute('id')) {
-            if (element.id) {
-                elementAsString += ' id="' + element.id;
-            }
-            if (element.classList.length > 0) {
-                elementAsString += ' class="' + element.className + '"';
-            }
+        if (element.hasAttribute('id')) {
+            elementAsString += ' id="' + element.id;
+        }
+        if (element.hasAttribute('class')) {
+            elementAsString += ' class="' + element.className + '"';
         }
 
         console.log(elementAsString);
