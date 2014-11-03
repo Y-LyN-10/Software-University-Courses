@@ -12,22 +12,104 @@
     <h1 class="animated flip">Canvas Geometry API</h1>
     <div id="geometry-api" class="animated fadeInDown">
         <form class="select-shape">
-            <input type="submit" class="btn" id="draw-triangle" value="Triangle"/><!--
+            <input type="submit" class="btn" id="draw-point" value="Point"/><!--
 -white-----><input type="submit" class="btn" id="draw-circle" value="Circle"/><!--
--spacing---><input type="submit" class="btn" id="draw-rectangle" value="Rectangle"/><!--
--hack------><input type="submit" class="btn" id="draw-line" value="Line"/><!--
------------><input type="submit" class="btn" id="draw-point" value="Point"/>
+-spacing---><input type="submit" class="btn" id="draw-triangle" value="Triangle"/><!--
+-hack------><input type="submit" class="btn" id="draw-rectangle" value="Rectangle"/><!--
+-----------><input type="submit" class="btn" id="draw-line" value="Line"/>
         </form>
         <form class="base-options">
-            <input type="number" id="line-width" value="1" max="7"/>
-            <label for="line-width"> < Line Width</label><br>
-            <input type="color" id="stroke-color">
-            <label for="stroke-color">< Stroke Color</label>
-            <label for="fill-color"> and Fill Color > </label>
-            <input type="color" id="fill-color"><br>
-            <input type="number" id="x">
-            <label for="x">< X</label><label for="y"> and Y ></label>
-            <input type="number" id="y">
+            <table>
+                <tr>
+                    <td>
+                        <input type="color" id="stroke-color">
+                        <label for="stroke-color">< Stroke Color</label>
+                    </td>
+                    <td class="right-column">
+                        <label for="fill-color">Fill Color ></label>
+                        <input type="color" id="fill-color">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="x" class="left-aligned">
+                        <label for="x">< X</label>
+                    </td>
+                    <td class="right-column">
+                        <label for="y">Y ></label>
+                        <input type="number" id="y" class="right-aligned">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <form class="circle options">
+            <table>
+                <tr>
+                    <td>
+                        <input type="number" id="circle-radius">
+                        <label for="circle-radius">< Radius</label>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <form class="triangle options">
+            <table>
+                <tr>
+                    <td>
+                        <input type="number" id="x2">
+                        <label for="x">< X2</label>
+                    </td>
+                    <td class="right-column">
+                        <label for="y">Y2 ></label>
+                        <input type="number" id="y2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="x3">
+                        <label for="x">< X3</label>
+                    </td>
+                    <td class="right-column">
+                        <label for="y">Y3 ></label>
+                        <input type="number" id="y3">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <form class="rectangle options">
+            <table>
+                <tr>
+                    <td>
+                        <input type="number" id="rect-height">
+                        <label for="rect-height">< Height</label>
+                    </td>
+                    <td class="right-column">
+                        <label for="rect-width">Width ></label>
+                        <input type="number" id="rect-width">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <form class="line options">
+            <table>
+                <tr>
+                    <td>
+                        <input type="number" id="x1">
+                        <label for="x1">< X1</label>
+                    </td>
+                    <td class="right-column">
+                        <label for="y1">Y1 ></label>
+                        <input type="number" id="y1">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <form id="control-canvas">
+            <textarea name="options-container" id="options-container" cols="40" rows="10" readonly="readonly">
+                      </textarea><!-- use event handler on click with "this.focus();this.select()" -->
+            <input type="button" id="up-btn"/><br>
+            <input type="button" id="down-btn"/><br>
+            <input type="button" id="delete-btn"/>
         </form>
         <form class="add-shape">
             <input type="button" class="btn" id="add-shape-btn" value="Add Shape"/>

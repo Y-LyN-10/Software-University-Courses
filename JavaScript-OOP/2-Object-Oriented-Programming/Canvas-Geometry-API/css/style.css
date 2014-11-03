@@ -69,12 +69,72 @@ h1{
     color: #ffffff;
 }
 
-#add-shape-btn{
+#add-shape-btn {
     padding: 10px 133px;;
 }
 
-.base-options > input{
+.options > input{
     display: inline;
     width: 40px;
-    margin: 5px;
+    margin: 10px;
+}
+
+form > label{
+    line-height: 30px;
+    text-align: center;
+}
+
+input[type=number]{
+    max-width: 42px;
+}
+
+table{
+    width: 100%;
+    padding: 10px;
+}
+
+.right-column{
+    text-align: right;
+}
+
+.rectangle{
+    display: none;
+}
+
+#options-container{
+    float: left;
+}
+
+#control-canvas{
+    margin: 10px;
+    position: absolute;
+    bottom: 40px;
+}
+
+#control-canvas > input[type=button]{
+    margin-left: 5px;
+}
+
+#control-canvas > #up-btn{
+    background: url('../imgs/up.png') no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+#control-canvas > #down-btn{
+    background: url('../imgs/down.png') no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+#control-canvas > #delete-btn{
+    background: url('../imgs/delete.png') no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    border: none;
 }
