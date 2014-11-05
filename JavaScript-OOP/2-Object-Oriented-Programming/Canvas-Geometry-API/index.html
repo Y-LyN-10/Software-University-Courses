@@ -12,13 +12,13 @@
     <h1 class="animated flip">Canvas Geometry API</h1>
     <div id="geometry-api" class="animated fadeInDown">
         <form class="select-shape">
-            <input type="submit" class="btn" id="draw-point" value="Point"/><!--
--white-----><input type="submit" class="btn" id="draw-circle" value="Circle"/><!--
--spacing---><input type="submit" class="btn" id="draw-triangle" value="Triangle"/><!--
--hack------><input type="submit" class="btn" id="draw-rectangle" value="Rectangle"/><!--
------------><input type="submit" class="btn" id="draw-line" value="Line"/>
+            <input type="button" class="btn" id="draw-point" value="Point"/><!--
+-white-----><input type="button" class="btn" id="draw-circle" value="Circle"/><!--
+-spacing---><input type="button" class="btn" id="draw-triangle" value="Triangle"/><!--
+-hack------><input type="button" class="btn" id="draw-rectangle" value="Rectangle"/><!--
+-----------><input type="button" class="btn" id="draw-line" value="Line"/>
         </form>
-        <form class="base-options">
+        <form class="base options" id="base-options">
             <table>
                 <tr>
                     <td>
@@ -32,12 +32,12 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="number" id="x" class="left-aligned">
+                        <input type="number" id="x">
                         <label for="x">< X</label>
                     </td>
                     <td class="right-column">
                         <label for="y">Y ></label>
-                        <input type="number" id="y" class="right-aligned">
+                        <input type="number" id="y">
                     </td>
                 </tr>
             </table>
@@ -117,6 +117,7 @@
     </div>
     <canvas id="drawArea" class="animated zoomIn" width="600" height="500"></canvas>
 </div>
+<script src="scripts/ui-controller.js"></script>
 <script src="scripts/shapes.js"></script>
 <script src="scripts/draw-shapes.js"></script>
 </body>
