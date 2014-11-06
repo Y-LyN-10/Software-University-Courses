@@ -33,6 +33,14 @@ h1{
     background: rgba(255, 255, 255, 0.8);
     display: inline-block;
     border: 1px solid black;
+    width: 600px;
+    height: 500px;
+}
+
+canvas{
+    display: block;
+    width: 100%;
+    border: 5px solid red;
 }
 
 .select-shape{
@@ -103,6 +111,7 @@ table{
 
 #options-container{
     float: left;
+    overflow: hidden;
 }
 
 #control-canvas{

@@ -10,17 +10,20 @@ var shapeModule = (function () {
 
     function Point(x, y, strokeColor, fillColor) {
         Shape.call(this, x, y, strokeColor, fillColor);
+        this.draw = drawPoint(this);
     }
 
     function Circle(x, y, strokeColor, fillColor, radius) {
         Shape.call(this, x, y, strokeColor, fillColor);
         this._radius = radius;
+        this.draw = drawCircle(this);
     }
 
     function Rectangle(x, y, strokeColor, fillColor, width, height) {
         Shape.call(this, x, y, strokeColor, fillColor);
         this._width = width;
         this._height = height;
+        this.draw = drawRectangle(this);
     }
 
     function Triangle(x, y, strokeColor, fillColor, x2, y2, x3, y3) {
@@ -29,12 +32,14 @@ var shapeModule = (function () {
         this._y2 = y2;
         this._x3 = x3;
         this._y3 = y3;
+        this.draw = drawTriangle(this);
     }
 
-    function Segment(x, y, strokeColor, fillColor, x2, y2) {
+    function Segment(x, y, strokeColor, fillColor, x1, y1) {
         Shape.call(this, x, y, strokeColor, fillColor);
-        this._x2 = x2;
-        this._y2 = y2;
+        this._x2 = x1;
+        this._y2 = y1;
+        this.draw = drawLine(this);
     }
 
     Shape.Point = Point;
