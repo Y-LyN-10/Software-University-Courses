@@ -20,12 +20,17 @@
         },
 
         validateDate: function (date, variableName) {
+            var MIN_DATE_IN_MONTH = 1;
+            var MAX_DAYS_IN_MONTH = 31;
+
+            var MIN_YEAR = 2000;
+            var MAX_YEAR = 2020;
+
             var day = date.getDate();
-            var monthName = date.toString().split(' ')[1];
             var year = date.getFullYear();
 
-            Validators.validateIntegerRange(day, 'day', 1, 31);
-            Validators.validateIntegerRange(year, 'year', 2000, 2020);
+            Validators.validateIntegerRange(day, 'day', MIN_DATE_IN_MONTH, MAX_DAYS_IN_MONTH);
+            Validators.validateIntegerRange(year, 'year', MIN_YEAR, MAX_YEAR);
         },
 
         validateIntegerRange: function (value, variableName, minValue, maxValue) {
@@ -265,7 +270,7 @@
         var Training = (function () {
             function Training(name, description, trainer, startDate, duration) {
                 if (this.constructor === Training) {
-                    throw new Error('Can\'t instantiate abstract class Estate');
+                    throw new Error('Can\'t instantiate abstract class Training');
                 }
 
                 this.setName(name);
@@ -316,7 +321,11 @@
             };
             Training.prototype.setDuration = function (duration) {
                 if (duration !== undefined) {
-                    Validators.validateIntegerRange(duration, "duration", 1, 99);
+                    var MIN_TRAINING_DURATION = 1;
+                    var MAX_TRAINING_DURATION = 99;
+
+                    Validators.validateIntegerRange(duration, "duration",
+                        MIN_TRAINING_DURATION, MAX_TRAINING_DURATION);
                 }
                 this._duration = duration;
             };
