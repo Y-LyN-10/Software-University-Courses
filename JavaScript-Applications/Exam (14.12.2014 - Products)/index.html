@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css"/>
+    <title>Products</title>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <img class="img-header" src="imgs/trash.png" width="50px"/>
+        <h1 class="site-header">Products</h1>
+        <nav id="menu">
+            <ul id="guest-nav">
+                <li class="nav-button"><a href="#/">Home</a></li>
+                <li class="nav-button"><a href="#/login" id="login-btn">Login</a></li>
+                <li class="nav-button"><a href="#/register">Register</a></li>
+            </ul>
+            <ul id="user-nav">
+                <li class="nav-button"><a href="#/">Home</a></li>
+                <li class="nav-button"><a href="#/products">Products</a></li>
+                <li class="nav-button"><a href="#/products/add">Add Product</a></li>
+                <li class="nav-button"><a href="#/logout" id="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main"></div>
+</div>
+
+<script type="text/javascript" src="libs/jquery.js"></script>
+<script type="text/javascript" src="libs/q.js"></script>
+<script type="text/javascript" src="libs/mustache.js"></script>
+<script type="text/javascript" src="libs/handlebars.js"></script>
+<script type="text/javascript" src="libs/sammy.js"></script>
+
+<script type="text/javascript" src="scripts/ajax-requester.js"></script>
+<script type="text/javascript" src="scripts/data.js"></script>
+<script type="text/javascript" src="scripts/controller.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+
+</body>
+</html>
