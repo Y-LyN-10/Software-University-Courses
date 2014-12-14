@@ -1,6 +1,10 @@
-Please, run this app via nodejs: <br>
-node static-server.js
+Please, run this app with nodejs. It serves static files. <br>
+node client-server.js
 
-By default, it will be at port 3000
+By default, the app should be running on localhost, port 3000
 
 Oh, add libraries by yourself xD
+* jQuery
+* Mustache
+* Sammy
+* Q
