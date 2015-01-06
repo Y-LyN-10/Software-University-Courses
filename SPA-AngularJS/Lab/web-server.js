@@ -1,4 +1,4 @@
-﻿#!/usr/bin/node
+﻿#!/usr/bin/env node
 
 /**
  * web-server.js Borrowed from angularjs.org tutorial
@@ -11,7 +11,7 @@ var util = require('util'),
     url = require('url'),
     events = require('events');
 
-var DEFAULT_PORT = 5000;
+var DEFAULT_PORT = 1234;
 
 function main(argv) {
     new HttpServer({
@@ -116,7 +116,7 @@ StaticServlet.prototype.handleRequest = function (req, res) {
     }
 
     self.findAndSendTarget(req, path, res, self);
-};
+}
 
 StaticServlet.prototype.findAndSendTarget = function(req, path, res, self) {
 util.puts(path);
