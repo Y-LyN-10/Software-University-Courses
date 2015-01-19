@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MusicShopManager.Engine.Command" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAEAAAAIAAAAQIgAAEAAAAAIAAAACAAAA=</HashCode>
+      <FileName>Engine\Command.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MusicShopManager.Engine.ConsoleInterface" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\ConsoleInterface.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MusicShopManager.Engine.EngineConstants" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgCFIAACAAQAAACAAAAAAACQgAAAiAAhAAQAASCg=</HashCode>
+      <FileName>Engine\EngineConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicShopManager.Engine.MusicShopEngine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgYABAAICgCAAAEYAAAAAQAAADQAAAARAAAAAQEgAE=</HashCode>
+      <FileName>Engine\MusicShopEngine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MusicShopManager.Engine.Factories.ArticleFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAgAAAAAAAAAAAQAAAAAQAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Engine\Factories\ArticleFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MusicShopManager.Engine.Factories.MusicShopFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Factories\MusicShopFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MusicShopManager.MusicShopManagerProgram" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>MusicShopManagerProgram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicShop.Models.Microphone" Collapsed="true">
+    <Position X="8" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Models\Microphone.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicShop.Models.Guitar" Collapsed="true">
+    <Position X="3.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAQAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Models\Guitar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.172" />
+  </Class>
+  <Class Name="MusicShop.Models.Instrument" Collapsed="true">
+    <Position X="5.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\Instrument.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicShop.Models.ElectricGuitar">
+    <Position X="3.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ElectricGuitar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicShop.Models.BassGuitar">
+    <Position X="6" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\BassGuitar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicShop.Models.AcousticGuitar">
+    <Position X="1.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AcousticGuitar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicShop.Models.Article" Collapsed="true">
+    <Position X="6.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAA=</HashCode>
+      <FileName>Models\Article.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="12" Y="6.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MusicShop.Models.Drums" Collapsed="true">
+    <Position X="7.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Drums.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicShop.Models.MusicShop">
+    <Position X="6.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAIAAEABAAAAAAAAAQAAAAEABAAAAAAAIAEAAA=</HashCode>
+      <FileName>Models\MusicShop.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="MusicShopManager.Interfaces.Engine.IArticleFactory" Collapsed="true">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAgAAAAAAAAAAAQAAAAAQAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Interfaces\Engine\IArticleFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.Engine.ICommand" Collapsed="true">
+    <Position X="13.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Engine\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.Engine.IMusicShopEngine" Collapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Engine\IMusicShopEngine.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.Engine.IMusicShopFactory" Collapsed="true">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Engine\IMusicShopFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.Engine.IUserInterface" Collapsed="true">
+    <Position X="15.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Engine\IUserInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.IAcousticGuitar" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAcousticGuitar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.IArticle" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAA=</HashCode>
+      <FileName>Interfaces\IArticle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.IBassGuitar" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IBassGuitar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.IDrums" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDrums.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.IElectricGuitar" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IElectricGuitar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.IGuitar" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAQAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Interfaces\IGuitar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.IInstrument" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Interfaces\IInstrument.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.IMicrophone" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Interfaces\IMicrophone.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicShopManager.Interfaces.IMusicShop" Collapsed="true">
+    <Position X="15.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAEAAAAAAAAAAAQAAAAAAAAAAAAAAIAEAAA=</HashCode>
+      <FileName>Interfaces\IMusicShop.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MusicShop.Models.StringMaterial" Collapsed="true">
+    <Position X="12" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAABAAAAAAAAAAAAAEAAAAAAAAAE=</HashCode>
+      <FileName>Models\StringMaterial.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
