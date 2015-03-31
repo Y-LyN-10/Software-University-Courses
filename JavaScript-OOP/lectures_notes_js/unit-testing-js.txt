@@ -1,0 +1,56 @@
+Unit testing in JavaScript
+------------------------------------------
+Chai:
+
+describe('#sum', function() {
+	//here are the tests
+	it(name, callback);
+});
+
+describe('Person', function() {
+	describe('when initializing', function(){
+		it('with valid names, expect ok', function(){
+			var person = new Person('Peter', 'Petrov');
+			expect(person.firstname()).to.equal('Peter');
+			expect(person.lastname()).to.equal('Petrov');
+		});
+	});
+});
+
+describe('#sum', function() {
+	describe('when initializing', ...
+	describe('when changing name', ...
+});
+
+Chai assertation styles:
+- Assesrt style
+	assert.equal(person.firstname(), 'Peter');
+- Expect style
+	expect(person.firstname()).to.equal('Peter');
+- Should style
+	person.firstname().should.equal('Peter');
+	
+expect(person.firstname()).to.equal('Peter');
+expect(person).to.be.a('Person'); // проверява типа
+expect(person).to.not.be.undefined;
+expect(person).not.to.be.null;
+expect(person).to.be.ok;
+expect(person).not.to.be.ok;
+expect(function(){
+	//without name
+	new Person();
+}).to.throw(ReferenceError);
+
+Chains: 
+to / be / been / is / that / and / has / with / at / of / same / not
+a / include / ok / true / false / null / above / least
+
+expect({foo: 'baz'}).to.have.property('foo').and.not.equal('bar');
+expect([1,2,3]).to.have.length.of.at.least(2);
+
+
+
+
+
+
+
