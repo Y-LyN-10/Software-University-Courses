@@ -1,0 +1,55 @@
+Web Storages:
+
+//sets a cookie
+document.cookie = 'c1=cookie1; expires=Thu, 30 Apr 2013 21:44 UTC; path=/'
+
+//reads all cookies
+console.log(document.cookie);
+
+function readCookie(name) {
+	var allCookies = document.cookie.split(";");
+	for (var i = 0; i < allCookies.length; i++) {
+		var cookie = allCookies[i];
+		var trailingZeros = 0;
+		for (var j = 0; j < cookie.length; j++) {
+			if (cookie[j] !== " ") {
+				break;
+			}
+		}
+		cookie = cookie.substring(j);
+		if (cookie.startsWith(name + "=")) {
+			return cookie;
+		}
+	}
+}
+
+Local Storage:
+//works only after IE8
+
+function saveState(text){
+	localStorage["text"] = text;
+}
+function restoreState(){
+	return localStorage["text"];
+}
+
+//same as:
+function saveState(text){
+	localStorage.setValue("text", text);
+}
+function restoreState(){
+	return localStorage.getValue("text");
+}
+
+Session Storage: same as local storage, but expires
+
+localStorage.setItem('name', 'Doncho');
+localStorage.getItem('name');
+
+//if set object, we must JSON.stringify() it and get it with JSON.parse()
+
+
+document.getElementById('d').innerHTML = sessionStorage.getItem('count');
+sessionStorage.setItem('count', (Number(sessionStorage.getItem('count') || 0)+1));
+
+

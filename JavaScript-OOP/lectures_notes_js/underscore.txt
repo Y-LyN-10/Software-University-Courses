@@ -1,0 +1,39 @@
+﻿Undescore JS:
+
+- Extends the functionality for:
+	- Collections, Arrays, Functions, Objects.
+- Templates and Chaining - simple
+- Collections means both arrays and objects (Асоциативен масив = обект.)
+
+Collection extensions:
+- _.each() / _.map(), _.pluck() / _.filter(), _,reject() and _.where / _.all and _.any() / _.sortBy(), _.groupBy()
+
+_.each itterates over all objects - always last in chaining.
+_.map() - we can extend and change everything.
+	.map(function(value, key)){})
+	
+	.all === .every
+	.any === .some
+	.tap === .each - not exactly, but... yeah
+	
+_,pluck - take only one property value
+	_.pluck('lname').value();
+	
+	.pluck and .map are similar, but not exactly
+	
+Array extensions:
+- _.first() and _.initial() / _.last() and _.rest() / _.compact() - removes all false values / _.union() and _.interest()
+
+_.memoize() - функцията се изпълнява един път. Полезно е когато дадена функция при дадени параметри всъща един и същи резултат и просто не се налага да се изчислява наново.
+
+_.compose - може да си композираме функциите като ги изброим, вместо да ги нестваме една в друга.
+
+Object Extensions - _.keys(obj), _.values(obj), _.invert(obj), _.extend(obj, properties);
+
+_.inverted(obj) разменя ключовете и стойностите.
+
+Други библиотеки като underscore.
+lodash  - екстеншън на underscore
+lazy.js - същото
+
+Има и LINQ.js или JSLINQ - за cool chaining
