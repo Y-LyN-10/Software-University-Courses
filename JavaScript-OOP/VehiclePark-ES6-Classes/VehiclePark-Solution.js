@@ -12,9 +12,12 @@ function processVehicleParkCommands(commands) {
             }
 
             get name(){
+                // If you return name instead of _name, you'll get maximum call stack exceeded
                 return this._name;
             }
             set name(name){
+                // Undefined, null or empty strings are falsy-like, so there is no need of additional checks
+                // Keep it simple and readble :)
                 if(!name){
                     throw new Error("Name cannot be empty or undefined.");
                 }
@@ -42,9 +45,25 @@ function processVehicleParkCommands(commands) {
             }
 
             toString(){
-                return ` ---> ${this.getName()},position= ${this.getPosition()}`;
+                // Yeah! ES6 Template strings using back ticks, how cool is that? :)
+                return ` ---> ${this.name},position=${this.position}`;
             }
         }
+
+        // Classes can hold only functions, so it's not possible to declare variables inside them
+
+        // wow, real constant that can't be changed :)
+        const WHEELS = {
+            bike: 2,
+            truck: 4
+        };
+
+        // Creating enums in ES6 is still masochistic. It would be overkill here, so const is OK
+        // If interested in enums in ES6, see that - https://gist.github.com/xmlking/e86e4f15ec32b12c4689
+        const TERRAINS = {
+            road: 'road',
+            all: 'all'
+        };
 
         class Vehicle {
             constructor(brand, age, terrain, wheels){
@@ -58,6 +77,9 @@ function processVehicleParkCommands(commands) {
                 return this._brand;
             }
             set brand(brand){
+                if(brand.length === 0){
+                    throw new Error('Vehicle brand should be a non-empty string');
+                }
                 this._brand = brand;
             }
 
@@ -65,6 +87,9 @@ function processVehicleParkCommands(commands) {
                 return this._age;
             }
             set age(age){
+                if(age < 0){
+                    throw new Error('Vehicle age should always be a non-negative number');
+                }
                 this._age = age.toFixed(1);
             }
 
@@ -72,35 +97,36 @@ function processVehicleParkCommands(commands) {
                 return this._terrain;
             }
             set terrain(terrain){
-                if(terrain){
-                    this._terrain = terrain;
+                if(Object.keys(TERRAINS).indexOf(terrain) === -1){
+                    throw new Error('Vehicle terrain coverage can be either “road” or “all”');
                 }
+
+                this._terrain = terrain;
             }
 
             get wheels(){
                 return this._wheels;
             }
             set wheels(wheels){
-                if (!wheels){
+                if (wheels < 0){
                     throw new Error('Vehicle number of wheels should always be a non-negative number');
                 }
                 this._wheels = Math.round(wheels);
             }
 
-            toString(){
-                var vehicle = ` -> ${this.constructor.name}: `;
-
-                vehicle += `brand=${this.brand},age=${this.age},terrainCoverage=${this.terrain},numberOfWheels=${this.wheels}`;
-
-                return vehicle;
+            toString(vehicleType){
+                // Well, following the OOP principles - that implementation with
+                // vehicleType is not the best I guess, but it's to avoid code repetition
+                // and it's more readable, which is more important in that case
+                return ` -> ${vehicleType}: brand=${this.brand},age=${this.age}` +
+                `,terrainCoverage=${this.terrain},numberOfWheels=${this.wheels}`;
             }
         }
 
         class Bike extends Vehicle {
-            //const BIKE_WHEELS = 2;
+            constructor(brand, age, terrain, frame, shifts){
+                super(brand, age, terrain, WHEELS.bike);
 
-            constructor(brand, age, terrain, frame, shifts, wheels){
-                super(brand, age, terrain, wheels=2);
                 this.frame = frame;
                 this.shifts = shifts;
             }
@@ -109,7 +135,7 @@ function processVehicleParkCommands(commands) {
                 return this._frame;
             }
             set frame(frame){
-                if (!frame) {
+                if (frame < 0) {
                     throw new Error("Frame size of wheels cannot be negative.");
                 }
                 this._frame = frame;
@@ -119,17 +145,14 @@ function processVehicleParkCommands(commands) {
                 return this._shifts;
             }
             set shifts(shifts){
-                if (shifts) {
+                if(shifts){
                     this._shifts = shifts;
-                } else {
-                    this._shifts = '';
                 }
             }
 
             toString() {
-                //super();
-                //var bike = '';
-                var bike = Vehicle.prototype.toString.call(this);
+                // super.toString() is equivalent to Vehicle.prototype.toString.call(this);
+                let bike = super.toString(this.constructor.name);
 
                 bike += `,frameSize=${this._frame}`;
                 if(typeof this._shifts !== 'undefined'){
@@ -141,15 +164,108 @@ function processVehicleParkCommands(commands) {
         }
 
         class Automobile extends Vehicle {
-            // TODO: Implement this class
+            constructor(brand, age, terrain, wheels, consumption, fuel){
+                super(brand, age, terrain, wheels);
+                this.consumption = consumption;
+                this.fuel = fuel;
+            }
+
+            get consumption(){
+                return this._consumption;
+            }
+
+            set consumption(consumption){
+                this._consumption = consumption;
+            }
+
+            get fuel(){
+                return this._fuel;
+            }
+
+            set fuel(fuel){
+                this._fuel = fuel;
+            }
+
+            toString() {
+                let automobile = super.toString(this.constructor.name);
+                automobile += `,consumption=[${this.consumption}l/100km ${this.fuel}]`;
+
+                return automobile;
+            };
         }
 
-        class Truck extends Vehicle {
-            // TODO: Implement this class
+        class Truck extends Automobile {
+            // How awesome it would be to set terrain=TERRAINS.all as default here?
+            // Yeah, we can do that with ES6, but... this feature is not implemented in nodejs/iojs, yet
+            // Maybe it works at the last versions of Firefox
+            constructor(brand, age, terrain, consumption, fuel, doors){
+                // Then - the old good method to set defaults would be fine:
+                // terrain = terrain || TERRAINS.all;
+                // but we can't write anything before the 'super' function, because
+                // "A 'super' constructor call may only appear as the first statement of a function"
+
+                super(brand, age, terrain || TERRAINS.all, WHEELS.truck, consumption, fuel);
+                // but - WOW, what I just did? It's not in the books... oh, that's why I love JavaScript ^^
+                this.doors = doors;
+            }
+
+            get doors() {
+                return this._doors;
+            }
+
+            set doors(doors){
+                this._doors = doors;
+            }
+
+            toString() {
+                return super.toString(this.constructor.name) + `,numberOfDoors=${this.doors}`;
+            };
         }
 
-        class Limo extends Vehicle {
-            // TODO: Implement this class
+        class Limo extends Automobile {
+            constructor(brand, age, wheels, consumption, fuel, employees){
+                super(brand, age, TERRAINS.road, wheels, consumption, fuel);
+                this.employees = []; // TODO: Try to rewrite it with Set
+            }
+
+            get employees(){
+                return this._employees;
+            }
+
+            set employees(employees){
+                this._employees = employees;
+            }
+
+            // Not sure if these functions should be inside Limo class...
+            appendEmployee(employee){
+                if (this._employees.indexOf(employee) === -1) {
+                    this._employees.push(employee);
+                }
+            }
+
+            detachEmployee(employee){
+                let index = this._employees.indexOf(employee);
+                if (index === -1) {
+                    // well, I have a feeling that this is already implemented somewhere >.<
+                    throw new Error('Employee doesn\'t exist');
+                }
+
+                this._employees.splice(index, 1);
+            }
+
+            toString() {
+                let limo = super.toString(this.constructor.name);
+
+                limo += "\n" + " --> Employees, allowed to drive:";
+                if (this.employees.length === 0) {
+                    limo += " ---";
+                }
+
+                // Ah, fat arrow functions in ES6 :) Pure lambdas!
+                limo += this.employees.map(e => '\n' + e.toString()).join('');
+
+                return limo;
+            };
         }
 
         return {
@@ -224,7 +340,7 @@ function processVehicleParkCommands(commands) {
                     case "employee":
                         object = getEmployeeByName(command["name"]);
                         _vehicles.forEach(function(t) {
-                            if (t instanceof Models.Limo && t.getEmployees().indexOf(object) !== -1) {
+                            if (t instanceof Models.Limo && t.employees.indexOf(object) !== -1) {
                                 t.detachEmployee(object);
                             }
                         });
@@ -275,7 +391,8 @@ function processVehicleParkCommands(commands) {
             function getVehicleByBrandAndType(brand, type) {
                 for (var i=0; i < _vehicles.length; i++) {
                     if (_vehicles[i].constructor.name.toString().toLowerCase() === type &&
-                        _vehicles[i].getBrand() === brand) {
+                        _vehicles[i].brand === brand) {
+                        // I had to change getBrand to brand, because it wasn't working properly
                         return _vehicles[i];
                     }
                 }
@@ -286,7 +403,7 @@ function processVehicleParkCommands(commands) {
                 var currentVehicles = [];
                 for (var i=0; i < _vehicles.length; i++) {
                     if (_vehicles[i] instanceof Models.Limo &&
-                        _vehicles[i].getBrand() === brand) {
+                        _vehicles[i].brand === brand) {
                         currentVehicles.push(_vehicles[i]);
                     }
                 }
@@ -299,7 +416,7 @@ function processVehicleParkCommands(commands) {
             function getEmployeeByName(name) {
 
                 for (var i = 0; i < _employees.length; i++) {
-                    if (_employees[i].getName() === name) {
+                    if (_employees[i].name === name) {
                         return _employees[i];
                     }
                 }
@@ -307,7 +424,7 @@ function processVehicleParkCommands(commands) {
             }
 
             function formatOutputList(output) {
-                var queryString = 'List Output:\n';
+                var queryString = 'List Output:' + '\n';
 
                 if (output.length > 0) {
                     queryString += output.join("\n");
@@ -318,10 +435,31 @@ function processVehicleParkCommands(commands) {
                 return queryString;
             }
 
+            function processListEmployees(commandArgs){
+                var grade = commandArgs['grade'];
+
+                // Use fat arrow functions as well :)
+                _employees.sort((a, b) => a.name > b.name);
+
+                var result = 'List Output:' + '\n';
+
+                // In ES7 it will be possible to write Python-like array comprehensions ^^
+                //[for (e of _employees) if (e.grade >= grade || grade === 'all') e];
+
+                // But not now... so, let's use the functional power of JavaScript!
+                result += _employees
+                    .filter(e => e.grade >= grade || grade === 'all')
+                    //.map(e => e.toString().trim())
+                    .join('\n');
+
+                return result;
+            }
+
             return {
                 processInsertCommand: processInsertCommand,
                 processDeleteCommand: processDeleteCommand,
                 processListCommand: processListCommand,
+                processListEmployees: processListEmployees,
                 processAppendEmployeeCommand: processAppendEmployeeCommand,
                 processDetachEmployeeCommand: processDetachEmployeeCommand
             }
