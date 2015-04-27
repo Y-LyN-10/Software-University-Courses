@@ -16,10 +16,9 @@ function processVehicleParkCommands(commands) {
                 return this._name;
             }
             set name(name){
-                // Undefined, null or empty strings are falsy-like, so there is no need of additional checks
                 // Keep it simple and readble :)
                 if(!name){
-                    throw new Error("Name cannot be empty or undefined.");
+                    throw new Error('Name cannot be empty or undefined');
                 }
                 this._name = name;
             }
@@ -29,7 +28,7 @@ function processVehicleParkCommands(commands) {
             }
             set position(position){
                 if(!position){
-                    throw new Error("Position cannot be empty or undefined.");
+                    throw new Error('Position cannot be empty or undefined');
                 }
                 this._position = position;
             }
@@ -39,7 +38,7 @@ function processVehicleParkCommands(commands) {
             }
             set grade(grade){
                 if (!grade) {
-                    throw new Error("Grade cannot be negative.");
+                    throw new Error('Grade cannot be negative');
                 }
                 this._grade = grade;
             }
@@ -51,8 +50,7 @@ function processVehicleParkCommands(commands) {
         }
 
         // Classes can hold only functions, so it's not possible to declare variables inside them
-
-        // wow, real constant that can't be changed :)
+        // but wow: real constant that can't be changed :)
         const WHEELS = {
             bike: 2,
             truck: 4
@@ -117,7 +115,7 @@ function processVehicleParkCommands(commands) {
             toString(vehicleType){
                 // Well, following the OOP principles - that implementation with
                 // vehicleType is not the best I guess, but it's to avoid code repetition
-                // and it's more readable, which is more important in that case
+                // and it's more readable, which is more important in that es6 example
                 return ` -> ${vehicleType}: brand=${this.brand},age=${this.age}` +
                 `,terrainCoverage=${this.terrain},numberOfWheels=${this.wheels}`;
             }
@@ -136,7 +134,7 @@ function processVehicleParkCommands(commands) {
             }
             set frame(frame){
                 if (frame < 0) {
-                    throw new Error("Frame size of wheels cannot be negative.");
+                    throw new Error('Frame size of wheels cannot be negative');
                 }
                 this._frame = frame;
             }
@@ -153,8 +151,8 @@ function processVehicleParkCommands(commands) {
             toString() {
                 // super.toString() is equivalent to Vehicle.prototype.toString.call(this);
                 let bike = super.toString(this.constructor.name);
-
                 bike += `,frameSize=${this._frame}`;
+            
                 if(typeof this._shifts !== 'undefined'){
                     bike += `,numberOfShifts=${this._shifts}`;
                 }
@@ -196,13 +194,13 @@ function processVehicleParkCommands(commands) {
 
         class Truck extends Automobile {
             // How awesome it would be to set terrain=TERRAINS.all as default here?
-            // Yeah, we can do that with ES6, but... this feature is not implemented in nodejs/iojs, yet
+            // Yeah, we can do that with ES6, but... this feature is not implemented in nodejs/iojs yet
             // Maybe it works at the last versions of Firefox
             constructor(brand, age, terrain, consumption, fuel, doors){
                 // Then - the old good method to set defaults would be fine:
                 // terrain = terrain || TERRAINS.all;
                 // but we can't write anything before the 'super' function, because
-                // "A 'super' constructor call may only appear as the first statement of a function"
+                // a 'super' constructor call may only appear as the first statement of a function
 
                 super(brand, age, terrain || TERRAINS.all, WHEELS.truck, consumption, fuel);
                 // but - WOW, what I just did? It's not in the books... oh, that's why I love JavaScript ^^
@@ -396,7 +394,7 @@ function processVehicleParkCommands(commands) {
                         return _vehicles[i];
                     }
                 }
-                throw new Error('No Limo with such brand exists.');
+                throw new Error('No Limo with such brand exists');
             }
 
             function getLimosByBrand(brand) {
